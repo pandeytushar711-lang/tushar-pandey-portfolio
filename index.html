@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#07080a">
+  <title>Tushar Pandey — Performance Marketing × AI Creative Studio</title>
+
+  <!-- Google Fonts: Bebas Neue for display typography, Plus Jakarta Sans for UI & body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=42">
+</head>
+<body>
+  <!-- Hairline preloader progress bar -->
+  <div id="loading-indicator" class="loading-indicator" aria-hidden="true">
+    <div id="loading-bar" class="bar"></div>
+  </div>
+
+  <!-- Pinned Canvas for Face-Turning Scroll Animation -->
+  <div class="canvas-viewport" id="canvas-viewport">
+    <canvas id="frame-canvas"></canvas>
+    <div class="cinematic-vignette"></div>
+  </div>
+
+  <!-- Global Sticky Top Navigation -->
+  <header class="top-nav" id="top-nav">
+    <div class="nav-container">
+      <!-- Brand Logo / Name -->
+      <a href="#home" class="brand-logo" id="brand-logo">TUSHAR PANDEY</a>
+
+      <!-- Center Navigation Links -->
+      <nav class="nav-links" id="nav-menu">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#work" class="nav-link" id="nav-work">Work</a>
+        <a href="#certifications" class="nav-link" id="nav-cert">Certifications</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#connect" class="nav-link" id="nav-connect">Connect</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+      </nav>
+
+      <!-- Right Utility: Interactive Theme / Glow Toggle -->
+      <div class="nav-actions">
+        <button class="toggle-switch active" id="theme-toggle" aria-label="Toggle cinematic mode" type="button" title="Cinematic Atmosphere Toggle">
+          <span class="toggle-thumb"></span>
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SCROLL TRACK (Drives the Face-Turning Animation)
+       ======================================================================== -->
+  <div class="hero-scroll-track" id="home">
+    <div class="hero-sticky-frame">
+      <div class="hero-content-wrapper">
+        <!-- Eyebrow text -->
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-text">PERFORMANCE MARKETER × AI CREATIVE STUDIO</span>
+        </div>
+
+        <!-- Oversized Symmetrical Display Typography Framing the Face -->
+        <div class="hero-display-typography">
+          <div class="display-col display-col-left">
+            <h1 class="display-word">TUSHAR</h1>
+            <p class="display-subtext">Performance Marketing × AI Creative Studio</p>
+          </div>
+
+          <div class="display-col display-col-right">
+            <h1 class="display-word">PANDEY</h1>
+            <div class="hero-cta-group">
+              <a href="#work" class="btn btn-primary" id="hero-explore-btn">
+                <span>Explore My Work</span>
+                <svg viewBox="0 0 16 16" fill="none" class="btn-arrow">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary" id="hero-connect-btn">
+                <span>Let's Connect</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Hero Description & Scroll Indicator -->
+        <div class="hero-footer-bar">
+          <p class="hero-description">
+            "I build performance-driven campaigns and AI-powered creative experiences — from paid media strategy to video ads, storytelling and visual production."
+          </p>
+          <div class="scroll-prompt" id="scroll-prompt">
+            <div class="mouse-icon">
+              <div class="mouse-wheel"></div>
+            </div>
+            <span class="prompt-text">Scroll to turn face</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN HOMEPAGE CONTENT SECTIONS (Flows naturally after Hero)
+       ======================================================================== -->
+  <div class="content-wrapper" id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 01: SELECTED WORK (6 Project Categories in Exact Required Order)
+         ---------------------------------------------------------------------- -->
+    <section class="section-block" id="work">
+      <div class="section-header">
+        <div class="section-label">CURATED PORTFOLIO</div>
+        <h2 class="section-title">SELECTED WORK</h2>
+        <p class="section-subtitle">A mix of performance marketing, AI creative production, content and experiments.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 01 — AI PERFORMANCE MARKETING & MARKETING ANALYTICS -->
+        <article class="project-card" data-category="performance" tabindex="0">
+          <div class="card-media">
+            <img src="assets/thumb_performance.svg" alt="AI Performance Marketing and Marketing Analytics Dashboard" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-badge">PAID MEDIA &amp; ANALYTICS</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-index">01</span>
+              <span class="card-type">GROWTH &amp; ANALYTICS</span>
+            </div>
+            <h3 class="card-title">AI Performance Marketing &amp; Marketing Analytics</h3>
+            <p class="card-description">
+              AI-assisted campaign optimization, paid media strategy, marketing analytics, and data-driven decision-making.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Google Ads</span>
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Flipkart Ads</span>
+              <span class="tag">Marketing Analytics</span>
+            </div>
+            <div class="card-action">
+              <button class="explore-btn" type="button" data-project="01">
+                <span>Explore Project</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 — GOLU UNIVERSE: AI VIDEO CREATION & STORYTELLING -->
+        <article class="project-card" data-category="golu" tabindex="0">
+          <div class="card-media">
+            <img src="assets/golu_complan.png" alt="Golu Universe AI Video Creation &amp; Creative Storytelling" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-badge">AI VIDEO &amp; STORYTELLING</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-index">02</span>
+              <span class="card-type">AI VIDEO CREATION &amp; STORYTELLING</span>
+            </div>
+            <h3 class="card-title">Golu Universe</h3>
+            <p class="card-description">
+              An exploration of AI-powered storytelling, animated characters, and brand-inspired video concepts — combining creative direction, visual experimentation, and narrative thinking to turn ideas into engaging video experiences.
+            </p>
+            <div class="card-tags">
+              <span class="tag">AI Storytelling</span>
+              <span class="tag">Brand Concepts</span>
+              <span class="tag">Character IP</span>
+              <span class="tag">Creative Direction</span>
+            </div>
+            <div class="card-action">
+              <button class="explore-btn" type="button" data-project="02">
+                <span>Explore Project</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 — AI MUSIC STUDIO -->
+        <article class="project-card" data-category="music" tabindex="0">
+          <div class="card-media">
+            <img src="https://i.ytimg.com/vi/JdY3cOjIFHg/hqdefault.jpg" alt="AI Music Studio — Ze-Wa Music" onerror="this.src='assets/thumb_music.svg'" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-badge">ZE-WA MUSIC • AUDIO &amp; VISUALS</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-index">03</span>
+              <span class="card-type">GENERATIVE AUDIO &amp; MUSIC</span>
+            </div>
+            <h3 class="card-title">AI Music Studio</h3>
+            <p class="card-description">
+              AI-assisted music composition, generative soundscapes, lyrical prompt systems, and published official music videos on the Ze-Wa Music YouTube channel.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Generative Music</span>
+              <span class="tag">Ze-Wa Music</span>
+              <span class="tag">Audio Concepts</span>
+              <span class="tag">Music Videos</span>
+            </div>
+            <div class="card-action">
+              <button class="explore-btn" type="button" data-project="03">
+                <span>Explore Project</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 04 — BHAKTI & DEVOTIONAL CONTENT -->
+        <article class="project-card" data-category="bhakti" tabindex="0">
+          <div class="card-media">
+            <img src="https://i.ytimg.com/vi/Fd29NFpJwcY/hqdefault.jpg" alt="Bhakti &amp; Devotional Content — Maruti Mantra" onerror="this.src='assets/thumb_bhakti.svg'" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-badge">MARUTI MANTRA • SACRED CREATIVE</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-index">04</span>
+              <span class="card-type">DEVOTIONAL CREATIVE &amp; SHORTS</span>
+            </div>
+            <h3 class="card-title">Bhakti &amp; Devotional Content</h3>
+            <p class="card-description">
+              Devotional creative projects, spiritual visual concepts, sacred audio, and YouTube Shorts on the Maruti Mantra channel rooted in cultural authenticity.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Spiritual Narratives</span>
+              <span class="tag">Sacred Art</span>
+              <span class="tag">Maruti Mantra</span>
+              <span class="tag">YouTube Shorts</span>
+            </div>
+            <div class="card-action">
+              <button class="explore-btn" type="button" data-project="04">
+                <span>Explore Project</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 05 — AI VISUAL LAB -->
+        <article class="project-card" data-category="visual" tabindex="0">
+          <div class="card-media">
+            <img src="assets/portrait_cinematic_after.png" alt="AI Visual Lab — Cinematic Lighting, Neural Transformations &amp; Systematic Prompt Architecture" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-badge">AI VISUAL LAB • PROMPT &amp; COMPARISONS</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-index">05</span>
+              <span class="card-type">AI VISUAL LAB &amp; PROMPTING</span>
+            </div>
+            <h3 class="card-title">AI Visual Lab</h3>
+            <p class="card-description">
+              6 interactive before-and-after transformations, AI brand concepts, and 9 systematic prompt architecture frameworks across cinematic portraiture, volumetric lighting, and commercial advertising.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Interactive Sliders</span>
+              <span class="tag">Portrait Enhancement</span>
+              <span class="tag">Prompt Architecture</span>
+              <span class="tag">Brand Concepts</span>
+              <span class="tag">Chiaroscuro</span>
+            </div>
+            <div class="card-action">
+              <button class="explore-btn" type="button" data-project="05">
+                <span>Explore Project</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 06 — SALES & ACCOUNT MANAGEMENT -->
+        <article class="project-card" data-category="sales" tabindex="0">
+          <div class="card-media">
+            <img src="assets/thumb_sales.svg" alt="Sales &amp; Account Management — Advertising Account Management, Seller Relationships &amp; Campaign Performance" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-badge">SALES &amp; ACCOUNT MANAGEMENT</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-index">06</span>
+              <span class="card-type">SALES &amp; ACCOUNT MANAGEMENT</span>
+            </div>
+            <h3 class="card-title">Sales &amp; Account Management</h3>
+            <p class="card-description">
+              Experience in sales and customer conversion at MyCaptain, alongside advertising account management for 110+ Flipkart sellers and 35+ Meta accounts. Combining client relationships, campaign understanding, performance analysis, and business growth.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Sales &amp; Conversion</span>
+              <span class="tag">Flipkart Ads (110+)</span>
+              <span class="tag">Meta Ads (35+)</span>
+              <span class="tag">₹70L+ Revenue</span>
+              <span class="tag">Account Management</span>
+            </div>
+            <div class="card-action">
+              <button class="explore-btn" type="button" data-project="06">
+                <span>Explore Project</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 02: CERTIFICATIONS & CONTINUOUS LEARNING
+         ---------------------------------------------------------------------- -->
+    <section class="section-block" id="certifications">
+      <div class="section-header">
+        <div class="section-label">CREDENTIALS &amp; EXPERTISE</div>
+        <h2 class="section-title">CERTIFICATIONS &amp; CONTINUOUS LEARNING</h2>
+        <p class="section-subtitle">Professional credentials across performance marketing, analytics, CRM systems, and generative AI strategy.</p>
+      </div>
+
+      <div class="certifications-grid">
+        <!-- Credential 1: HubSpot Academy -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-pill verified">Verified Credential</span>
+            <span class="cert-issuer">HubSpot Academy</span>
+          </div>
+          <h3 class="cert-name">Digital Advertising Certification</h3>
+          <p class="cert-desc">Paid campaign strategy, cross-network ad targeting, creative alignment, and advertising conversion funnel optimization.</p>
+          <div class="cert-meta">
+            <span class="cert-topic">Performance Marketing</span>
+            <span class="cert-status">Active Credential</span>
+          </div>
+          <div class="cert-action">
+            <a href="https://app-na2.hubspot.com/academy/achievements/tz1zprp5/en/1/tushar-pandey/digital-advertising-certified" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+              <span>View Credential</span>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Credential 2: Salesforce Trailhead -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-pill learning">Trailhead Learning Module</span>
+            <span class="cert-issuer">Salesforce Trailhead</span>
+          </div>
+          <h3 class="cert-name">Artificial Intelligence for Marketing</h3>
+          <p class="cert-desc">AI-driven customer journey mapping, predictive audience segmentation, automated content recommendations, and CRM workflow intelligence.</p>
+          <div class="cert-meta">
+            <span class="cert-topic">CRM &amp; Marketing AI</span>
+            <span class="cert-status">Learning Module</span>
+          </div>
+          <div class="cert-action">
+            <a href="https://trailhead.salesforce.com/content/learn/modules/artificial-intelligence-for-marketing" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+              <span>View Module</span>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Credential 3: Semrush Academy -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-pill verified">Verified Certificate</span>
+            <span class="cert-issuer">Semrush Academy</span>
+          </div>
+          <h3 class="cert-name">AI-Powered Marketer Certification</h3>
+          <p class="cert-desc">AI workflows for competitor intelligence, high-intent search analysis, programmatic content optimization, and performance growth.</p>
+          <div class="cert-meta">
+            <span class="cert-topic">Search &amp; Competitive Intel</span>
+            <span class="cert-status">Active Certificate</span>
+          </div>
+          <div class="cert-action">
+            <a href="https://static.semrush.com/academy/certificates/0f6ceb3798/tushar-pandey_26.pdf" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+              <span>View Certificate (PDF)</span>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Credential 4: Anthropic / Skilljar -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-pill verified">Verified Credential</span>
+            <span class="cert-issuer">Anthropic Skilljar</span>
+          </div>
+          <h3 class="cert-name">AI Fluency Credential</h3>
+          <p class="cert-desc">Large language model architecture, prompt engineering systems, reasoning capabilities, and practical enterprise AI application frameworks.</p>
+          <div class="cert-meta">
+            <span class="cert-topic">Generative AI &amp; LLMs</span>
+            <span class="cert-status">Active Credential</span>
+          </div>
+          <div class="cert-action">
+            <a href="https://verify.skilljar.com/c/fphvhpfvd2gj" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+              <span>Verify Credential</span>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Credential 5: Product Managers Course -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-pill foundation">Course Completed</span>
+            <span class="cert-issuer">Professional Curriculum</span>
+          </div>
+          <h3 class="cert-name">Marketing Fundamentals for Aspiring Product Managers</h3>
+          <p class="cert-desc">Market research, positioning frameworks, customer value propositions, go-to-market strategies, and cross-functional product-marketing alignment.</p>
+          <div class="cert-meta">
+            <span class="cert-topic">Product &amp; Growth Strategy</span>
+            <span class="cert-status">Coursework Complete</span>
+          </div>
+          <div class="cert-action">
+            <div class="cert-verify-static">
+              <span>Curriculum Foundation</span>
+              <svg viewBox="0 0 16 16" fill="currentColor" style="width:13px;height:13px"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-footnote">
+        <p>Direct verification credentials and learning module links are provided above. Additional documentation and campaign records are available upon request during professional consultations.</p>
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 04: ABOUT (Professional Foundations & Capabilities)
+         ---------------------------------------------------------------------- -->
+    <section class="section-block" id="about">
+      <div class="section-header">
+        <div class="section-label">BACKGROUND &amp; CAPABILITIES</div>
+        <h2 class="section-title">ABOUT TUSHAR PANDEY</h2>
+        <p class="section-subtitle">Bridging mathematical performance marketing with consultative sales and cinematic AI-driven production.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-narrative">
+          <p class="lead-text">
+            I unite analytical performance marketing, revenue-driven sales execution, and generative AI creative production — connecting paid media strategy and consultative client relationships with storytelling and visual synthesis.
+          </p>
+          <p class="body-text">
+            My professional career combines commercial sales discipline with technical campaign execution. At MyCaptain, I drove inside sales velocity, lead qualification, and CRM pipeline management. At Accenture, I managed advertisement seller accounts, campaign coordination, optimization pacing, and reporting. In parallel, I explore the generative frontier: architecting character universes like Golu, engineering concept commercials, producing generative music, and crafting chiaroscuro visual studies.
+          </p>
+          <div class="strengths-triad">
+            <div class="strength-card">
+              <div class="strength-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              </div>
+              <h4>Performance Marketing &amp; Analytics</h4>
+              <p>Paid media strategy, Google, Meta &amp; Flipkart Ads management, continuous ROAS calibration, and executive reporting.</p>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </div>
+              <h4>AI Creative Production</h4>
+              <p>Original character IP, episodic Hindi storytelling, concept video ads (e.g. Complan spec ad), prompt engineering, and visual labs.</p>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h4>Sales &amp; Account Management</h4>
+              <p>Consultative selling, CRM pipeline velocity, seller advertising account management, and client relationship retention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 03: CONNECT & EXPLORE (Multiple Account Configurable Foundation)
+         ---------------------------------------------------------------------- -->
+    <section class="section-block" id="connect">
+      <div class="section-header">
+        <div class="section-label">CHANNELS &amp; PORTALS</div>
+        <h2 class="section-title">CONNECT &amp; EXPLORE</h2>
+        <p class="section-subtitle">Follow my work, explore my projects, or get in touch to collaborate.</p>
+      </div>
+
+      <!-- Configurable Multi-Account Container (Populated dynamically from script.js data structure) -->
+      <div class="social-accounts-grid" id="social-accounts-container">
+        <!-- Rendered via maintainable data structure in script.js -->
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 04: CONTACT (Job Opportunities & Freelance Inquiries)
+         ---------------------------------------------------------------------- -->
+    <section class="section-block" id="contact">
+      <div class="section-header">
+        <div class="section-label">START A CONVERSATION</div>
+        <h2 class="section-title">LET'S CONNECT</h2>
+        <p class="section-subtitle">Open for full-time performance marketing roles and bespoke AI creative productions.</p>
+      </div>
+
+      <!-- ====================================================================
+           SUBSECTION: WHAT PEOPLE SAY ABOUT WORKING WITH ME (LinkedIn Recommendations)
+           ==================================================================== -->
+      <div class="recommendations-subsection" id="recommendations">
+        <div class="subsection-header">
+          <div class="subsection-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>VERIFIED LINKEDIN ENDORSEMENTS</span>
+          </div>
+          <h3 class="subsection-title">What People Say About Working With Me</h3>
+          <p class="subsection-subtitle">Authentic recommendations and leadership endorsements from direct managers on LinkedIn.</p>
+        </div>
+
+        <div class="recommendations-grid">
+          <!-- Recommendation 1: Paras Agarwal -->
+          <article class="rec-card" data-rec="1">
+            <div class="rec-card-header">
+              <div class="rec-avatar-initials rec-avatar-cyan" aria-hidden="true">PA</div>
+              <div class="rec-author-meta">
+                <div class="rec-author-name-row">
+                  <h4 class="rec-author-name">Paras Agarwal</h4>
+                  <span class="rec-linkedin-badge" title="Verified 1st Degree Connection on LinkedIn">
+                    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>
+                    <span>1st</span>
+                  </span>
+                </div>
+                <p class="rec-author-title">SaaS Sales Leader | Driving Pipeline Growth &amp; Enterprise Expansion | Building GTM Engines that Scale | 6+ Yrs in Outbound</p>
+                <div class="rec-context-row">
+                  <span class="rec-context-tag">April 1, 2026, Paras managed Tushar directly</span>
+                </div>
+              </div>
+              <div class="rec-quote-mark" aria-hidden="true">“</div>
+            </div>
+
+            <div class="rec-body-wrapper collapsed">
+              <div class="rec-body-content">
+                <p class="rec-paragraph">I am writing to wholeheartedly recommend Tushar for any professional endeavor he chooses to pursue. Tushar has been an invaluable member of my team as an Inside Sales Executive, and his contributions have consistently impressed me.</p>
+                <p class="rec-paragraph">Tushar possesses a rare blend of sales acumen, work ethic, and interpersonal skills that have made him an indispensable asset to our sales team. During his tenure with us, he has consistently exceeded sales targets, demonstrating his unwavering commitment to achieving and surpassing his goals. His ability to generate revenue and close deals is truly exceptional, and he has contributed significantly to our team's success.</p>
+                <p class="rec-paragraph">I wholeheartedly endorse Tushar and have no reservations in recommending him. He is an exceptional professional who will undoubtedly make a significant impact wherever he goes.</p>
+              </div>
+              <div class="rec-fade-gradient" aria-hidden="true"></div>
+            </div>
+
+            <button type="button" class="rec-expand-btn" aria-expanded="false" onclick="window.toggleRecExpand(this)">
+              <span class="rec-btn-text">Read more</span>
+              <svg viewBox="0 0 12 12" fill="none" class="rec-btn-icon"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+          <!-- Recommendation 2: Yashwanth Depuru -->
+          <article class="rec-card" data-rec="2">
+            <div class="rec-card-header">
+              <div class="rec-avatar-initials rec-avatar-violet" aria-hidden="true">YD</div>
+              <div class="rec-author-meta">
+                <div class="rec-author-name-row">
+                  <h4 class="rec-author-name">Yashwanth Depuru</h4>
+                  <span class="rec-linkedin-badge" title="Verified 1st Degree Connection on LinkedIn">
+                    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>
+                    <span>1st</span>
+                  </span>
+                </div>
+                <p class="rec-author-title">Growth @ Rippling | Outbound Specialist | Driving Pipeline &amp; Revenue</p>
+                <div class="rec-context-row">
+                  <span class="rec-context-tag">April 7, 2026, Yashwanth managed Tushar directly</span>
+                </div>
+              </div>
+              <div class="rec-quote-mark" aria-hidden="true">“</div>
+            </div>
+
+            <div class="rec-body-wrapper collapsed">
+              <div class="rec-body-content">
+                <p class="rec-paragraph">I had the opportunity to work with Tushar during our time at MyCaptain, where I led him in the sales function, and it was a genuinely rewarding experience.</p>
+                <p class="rec-paragraph">Tushar stood out as someone who is not only driven and disciplined but also highly coachable. He consistently showed a strong willingness to learn, adapt, and improve, qualities that are crucial in a fast-paced sales environment. His ability to understand customer needs, communicate effectively, and approach challenges with a problem-solving mindset made him a valuable part of the team.</p>
+                <p class="rec-paragraph">What impressed me most was his ownership and attitude. Whether it was handling prospects, meeting targets, or collaborating with the team, Tushar approached everything with sincerity and professionalism. Over time, I could clearly see his growth in confidence, sales acumen, and strategic thinking.</p>
+                <p class="rec-paragraph">I’m confident that Tushar will continue to excel in any role he takes on, especially in areas that require a blend of sales, business understanding, and customer-centric thinking.</p>
+                <p class="rec-paragraph">Wishing him all the very best for his journey ahead!</p>
+              </div>
+              <div class="rec-fade-gradient" aria-hidden="true"></div>
+            </div>
+
+            <button type="button" class="rec-expand-btn" aria-expanded="false" onclick="window.toggleRecExpand(this)">
+              <span class="rec-btn-text">Read more</span>
+              <svg viewBox="0 0 12 12" fill="none" class="rec-btn-icon"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+          <!-- Recommendation 3: Rukhsar Kousar -->
+          <article class="rec-card" data-rec="3">
+            <div class="rec-card-header">
+              <div class="rec-avatar-initials rec-avatar-amber" aria-hidden="true">RK</div>
+              <div class="rec-author-meta">
+                <div class="rec-author-name-row">
+                  <h4 class="rec-author-name">Rukhsar Kousar</h4>
+                  <span class="rec-linkedin-badge" title="Verified 1st Degree Connection on LinkedIn">
+                    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0z"/></svg>
+                    <span>1st</span>
+                  </span>
+                </div>
+                <p class="rec-author-title">Sales Operations Manager| Digital Inside Sales</p>
+                <div class="rec-context-row">
+                  <span class="rec-context-tag">May 12, 2026, Rukhsar managed Tushar directly</span>
+                </div>
+              </div>
+              <div class="rec-quote-mark" aria-hidden="true">“</div>
+            </div>
+
+            <div class="rec-body-wrapper collapsed">
+              <div class="rec-body-content">
+                <p class="rec-paragraph">I had the opportunity to work with Tushar Pandey during his tenure at Accenture, where he was part of the performance marketing team. Tushar demonstrated a strong understanding of digital marketing fundamentals, particularly in managing and optimizing paid campaigns at scale. He has hands-on experience handling high-impact campaigns and is comfortable working with significant budgets while maintaining a sharp focus on performance and efficiency.</p>
+                <p class="rec-paragraph">He consistently analyzed campaign data, identified areas of improvement, and implemented data-driven strategies to enhance results. His ability to balance performance metrics with business objectives makes him a valuable contributor to any marketing team.</p>
+                <p class="rec-paragraph">Tushar also brings a strong sense of ownership. He is reliable, proactive, and ensures timely execution without compromising on quality. He adapts quickly, communicates effectively, and collaborates well with cross-functional teams.</p>
+                <p class="rec-paragraph">I would highly recommend Tushar to any organization looking for a dedicated and growth-oriented performance marketing professional.</p>
+              </div>
+              <div class="rec-fade-gradient" aria-hidden="true"></div>
+            </div>
+
+            <button type="button" class="rec-expand-btn" aria-expanded="false" onclick="window.toggleRecExpand(this)">
+              <span class="rec-btn-text">Read more</span>
+              <svg viewBox="0 0 12 12" fill="none" class="rec-btn-icon"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+        </div>
+
+        <!-- Section 5: Clearly visible LinkedIn CTA -->
+        <div class="rec-cta-bar">
+          <a href="https://www.linkedin.com/in/tushar-pandey-ads1expert/" target="_blank" rel="noopener noreferrer" class="rec-linkedin-cta-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon-linkedin"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>View My LinkedIn Profile</span>
+            <svg viewBox="0 0 16 16" fill="none" class="btn-icon-external"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <span class="rec-cta-subtext">Verified professional references and recommendations hosted on LinkedIn</span>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-category">
+            <span class="badge badge-cyan">EMPLOYMENT</span>
+            <h3>Full-Time Opportunities</h3>
+            <p>Seeking roles in Performance Marketing, Paid Media, Growth Marketing, and Digital Strategy.</p>
+          </div>
+          <div class="contact-category">
+            <span class="badge badge-violet">FREELANCE &amp; STUDIO</span>
+            <h3>Creative &amp; Client Projects</h3>
+            <p>Available for AI video ads, creative direction, IP character development, and paid campaign consultation.</p>
+          </div>
+          <div class="contact-note">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="info-icon"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+            <span>Direct professional email and verified LinkedIn links will be activated with Tushar's provided credentials.</span>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message / Inquiry Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="portfolio-contact-form" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+            <!-- Anti-Spam Honeypot Field (Invisible to real visitors) -->
+            <div style="display:none;" aria-hidden="true">
+              <label for="contact-hp">Do not fill this</label>
+              <input type="text" name="_hp" id="contact-hp" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="e.g. john@company.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-intent">Subject / Inquiry Type</label>
+              <select id="contact-intent" name="intent">
+                <option value="job">Full-Time Role / Hiring</option>
+                <option value="freelance">Freelance AI Video / Creative Production</option>
+                <option value="paid_media">Paid Media / Performance Marketing</option>
+                <option value="networking">Professional Networking / General</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Briefly describe your project or opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+              <span class="btn-text">Send Message</span>
+              <svg viewBox="0 0 16 16" fill="none" class="btn-arrow"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="footer-name">Tushar Pandey</span>
+          <span class="footer-role">Performance Marketing × AI Creative Studio</span>
+        </div>
+        <div class="footer-center">
+          <a href="#home" class="back-to-top">
+            <span>Back to top</span>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 13V3M8 3L3.5 7.5M8 3L12.5 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="footer-right">
+          <span>&copy; 2026 Tushar Pandey. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========================================================================
+       INTERACTIVE PROJECT MODAL (Curated Deep Dive for each category)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-category" id="modal-project-category">PROJECT CATEGORY</span>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-project-modal" type="button" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-project-body">
+        <!-- Injected dynamically via script.js based on clicked card -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=42"></script>
+</body>
+</html>

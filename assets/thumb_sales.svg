@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSalesCockpit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16"/>
+      <stop offset="50%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#05070c"/>
+    </linearGradient>
+    <linearGradient id="cyanPurpleLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="45%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="chartArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#080c16" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121829" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d1220" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep cinematic background -->
+  <rect width="600" height="380" fill="url(#bgSalesCockpit)"/>
+
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g stroke="#1a2338" stroke-width="0.8" opacity="0.6">
+    <line x1="40" y1="60" x2="560" y2="60"/>
+    <line x1="40" y1="120" x2="560" y2="120"/>
+    <line x1="40" y1="180" x2="560" y2="180"/>
+    <line x1="40" y1="240" x2="560" y2="240"/>
+    <line x1="40" y1="300" x2="560" y2="300"/>
+    <line x1="100" y1="40" x2="100" y2="340" stroke-dasharray="3 3"/>
+    <line x1="220" y1="40" x2="220" y2="340" stroke-dasharray="3 3"/>
+    <line x1="360" y1="40" x2="360" y2="340" stroke-dasharray="3 3"/>
+    <line x1="480" y1="40" x2="480" y2="340" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Top System Status Header -->
+  <g transform="translate(40, 28)">
+    <rect width="520" height="32" rx="6" fill="#0f1526" stroke="#222d47" stroke-width="1"/>
+    <circle cx="18" cy="16" r="4" fill="#00e5ff"/>
+    <text x="32" y="20" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.2">ADVERTISING ACCOUNT MANAGEMENT &amp; PERFORMANCE</text>
+    <rect x="430" y="7" width="78" height="18" rx="3" fill="rgba(0, 229, 255, 0.12)" stroke="rgba(0, 229, 255, 0.3)" stroke-width="0.8"/>
+    <text x="469" y="19" fill="#00e5ff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">ACTIVE SUITE</text>
+  </g>
+
+  <!-- 3 Dedicated Account & Performance Hub Cards -->
+  <!-- Hub 1: Flipkart Ads (110+ Sellers) -->
+  <g transform="translate(40, 72)">
+    <rect width="164" height="105" rx="8" fill="url(#cardGrad)" stroke="#23314f" stroke-width="1.2"/>
+    <circle cx="16" cy="18" r="3.5" fill="#f59e0b"/>
+    <text x="26" y="21" fill="#f59e0b" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.8">FLIPKART ADS</text>
+    <text x="16" y="52" fill="#ffffff" font-family="'Bebas Neue', sans-serif" font-size="30" letter-spacing="0.5">110+</text>
+    <text x="16" y="68" fill="#38bdf8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="700">SELLER ACCOUNTS</text>
+    <text x="16" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="500">Campaigns • Budget Planning</text>
+    <text x="16" y="96" fill="#a855f7" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.8" font-weight="600">Up to 2× ROAS Optimization</text>
+  </g>
+
+  <!-- Hub 2: Meta Ads (35+ Accounts) -->
+  <g transform="translate(218, 72)">
+    <rect width="164" height="105" rx="8" fill="url(#cardGrad)" stroke="#23314f" stroke-width="1.2"/>
+    <circle cx="16" cy="18" r="3.5" fill="#38bdf8"/>
+    <text x="26" y="21" fill="#38bdf8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.8">META ADS (FB &amp; IG)</text>
+    <text x="16" y="52" fill="#ffffff" font-family="'Bebas Neue', sans-serif" font-size="30" letter-spacing="0.5">35+</text>
+    <text x="16" y="68" fill="#818cf8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="700">CLIENT ACCOUNTS</text>
+    <text x="16" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="500">Paid Social • Delivery Health</text>
+    <text x="16" y="96" fill="#00e5ff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.8" font-weight="600">Performance Reporting &amp; Comms</text>
+  </g>
+
+  <!-- Hub 3: MyCaptain (₹70L+ Revenue) -->
+  <g transform="translate(396, 72)">
+    <rect width="164" height="105" rx="8" fill="url(#cardGrad)" stroke="#23314f" stroke-width="1.2"/>
+    <circle cx="16" cy="18" r="3.5" fill="#22c55e"/>
+    <text x="26" y="21" fill="#22c55e" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.8">MYCAPTAIN SALES</text>
+    <text x="16" y="52" fill="#ffffff" font-family="'Bebas Neue', sans-serif" font-size="30" letter-spacing="0.5">₹70L+</text>
+    <text x="16" y="68" fill="#4ade80" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="700">REVENUE DELIVERED</text>
+    <text x="16" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="500">Marketing Leads • Salesforce CRM</text>
+    <text x="16" y="96" fill="#38bdf8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.8" font-weight="600">Consultative Customer Conversion</text>
+  </g>
+
+  <!-- Campaign Performance & Account Relationship Graph Console -->
+  <g transform="translate(40, 190)">
+    <rect width="520" height="142" rx="8" fill="#0c111e" stroke="#1d263b" stroke-width="1.2"/>
+
+    <!-- Graph Header -->
+    <text x="18" y="22" fill="#e2e8f0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="700">Account Stewardship &amp; Campaign Performance Metrics</text>
+    <text x="410" y="22" fill="#64748b" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600">ROAS &amp; ACCOUNT HEALTH</text>
+
+    <!-- Graph Grid Lines -->
+    <line x1="18" y1="42" x2="502" y2="42" stroke="#192236" stroke-width="1"/>
+    <line x1="18" y1="72" x2="502" y2="72" stroke="#192236" stroke-width="1"/>
+    <line x1="18" y1="102" x2="502" y2="102" stroke="#192236" stroke-width="1"/>
+
+    <!-- Shaded Performance Trend Area -->
+    <path d="M 18 108 L 75 96 L 140 88 L 210 92 L 280 68 L 360 62 L 430 42 L 502 32 L 502 120 L 18 120 Z" fill="url(#chartArea)"/>
+
+    <!-- Glowing Vector Trendline -->
+    <path d="M 18 108 L 75 96 L 140 88 L 210 92 L 280 68 L 360 62 L 430 42 L 502 32" fill="none" stroke="url(#cyanPurpleLine)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Performance Nodes -->
+    <circle cx="75" cy="96" r="3.5" fill="#080c16" stroke="#00e5ff" stroke-width="2"/>
+    <circle cx="140" cy="88" r="3.5" fill="#080c16" stroke="#00e5ff" stroke-width="2"/>
+    <circle cx="210" cy="92" r="3.5" fill="#080c16" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="280" cy="68" r="3.5" fill="#080c16" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="360" cy="62" r="3.5" fill="#080c16" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="430" cy="42" r="3.5" fill="#080c16" stroke="#c084fc" stroke-width="2"/>
+    <circle cx="502" cy="32" r="4.5" fill="#00e5ff" stroke="#ffffff" stroke-width="1.8"/>
+
+    <!-- Callout Pill: Performance Lift -->
+    <g transform="translate(420, 48)">
+      <rect width="82" height="20" rx="4" fill="#141c2e" stroke="#00e5ff" stroke-width="0.8"/>
+      <text x="41" y="14" fill="#00e5ff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">UP TO 2× ROAS</text>
+    </g>
+
+    <!-- Bottom Metric Tickers -->
+    <g transform="translate(18, 126)">
+      <text x="0" y="0" fill="#64748b" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="600">SELLER ENGAGEMENT</text>
+      <text x="150" y="0" fill="#64748b" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="600">BUDGET CONSULTATIONS</text>
+      <text x="310" y="0" fill="#64748b" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="600">CAMPAIGN OPTIMIZATION</text>
+      <text x="450" y="0" fill="#00e5ff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="700">VERIFIED</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Strip -->
+  <rect x="40" y="348" width="520" height="2" rx="1" fill="url(#cyanPurpleLine)"/>
+</svg>
