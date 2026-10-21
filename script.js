@@ -456,31 +456,122 @@
         items: [
           {
             type: 'video',
+            id: 'creative-video-card',
             title: 'Character Narrative & Short-Form Video Hook',
             oneLiner: 'Adapting episodic character IP into short-form video concepts with high visual retention and narrative pacing.',
             adApplication: 'Demonstrates how character storytelling and visual hooks can inspire short-form video advertising concepts. (Personal spec ad concept; not a client campaign).',
             disclaimer: 'Not affiliated with, commissioned by, or endorsed by Complan or its parent company.',
-            videoSrc: 'assets/golu_complan.mp4',
+            videoSrc: 'assets/golu_complan-compressed.mp4',
+            fallbackSrc: 'assets/golu_complan.mp4',
             posterSrc: 'assets/golu_complan.png',
-            tag: 'VIDEO AD CONCEPT'
+            tag: 'VIDEO AD CONCEPT',
+            videos: [
+              {
+                id: 'complan-spec-ad',
+                title: 'Complan — Morning Routine & Nutrition Hook',
+                videoSrc: 'assets/golu_complan-compressed.mp4',
+                fallbackSrc: 'assets/golu_complan.mp4',
+                posterSrc: 'assets/golu_complan.png',
+                tag: 'VIDEO AD CONCEPT',
+                caption: 'Complan Spec Ad • 30s Narrative Hook'
+              }
+            ]
           },
           {
             type: 'audio',
+            id: 'creative-audio-card',
             title: 'Generative Audio & Soundscape Concept',
             oneLiner: 'Developing original AI-assisted music compositions to complement audio-led creative ad experiments and soundtracks.',
             adApplication: 'Demonstrates how original AI-assisted music can support audio-led creative experiments and sonic branding. (Independent creative project).',
-            imageSrc: 'assets/thumb_music.svg',
-            alt: 'AI Music Studio Generative Soundscape Artwork',
-            tag: 'AUDIO-LED CREATIVE'
+            tag: 'AUDIO-LED CREATIVE',
+            tracks: [
+              {
+                id: 'stay-with-me-tonight',
+                title: 'Stay With Me Tonight (Official Music Video)',
+                channel: 'Ze-Wa Music',
+                genre: 'AI Pop Fusion',
+                videoId: 'JdY3cOjIFHg',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/JdY3cOjIFHg?rel=0',
+                thumbnail: 'https://i.ytimg.com/vi/JdY3cOjIFHg/hqdefault.jpg',
+                tag: 'ZE-WA MUSIC • TRACK 01'
+              },
+              {
+                id: 'ze-wa-slow',
+                title: 'Ze-Wa - SLOW',
+                channel: 'Ze-Wa Music',
+                genre: 'Downtempo Atmospheric Chill',
+                videoId: 'O5fYJf4lv0U',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/O5fYJf4lv0U?rel=0',
+                thumbnail: 'https://i.ytimg.com/vi/O5fYJf4lv0U/hqdefault.jpg',
+                tag: 'ZE-WA MUSIC • TRACK 02'
+              }
+            ]
           },
           {
             type: 'visual',
+            id: 'creative-visual-card',
             title: 'Computational Portraiture & Lighting Study',
             oneLiner: 'Engineering directional lighting and prompt frameworks for high-impact static ad variations and visual concepts.',
             adApplication: 'Demonstrates how generated or edited visuals can inspire static ad concepts and creative variations. (Independent creative experiment).',
-            imageSrc: 'assets/ai_visual_lab_1.png',
-            alt: 'AI Visual Lab Directional Lighting Portrait Experiment',
-            tag: 'STATIC AD VARIATION'
+            tag: 'STATIC AD VARIATION',
+            images: [
+              {
+                src: 'assets/portrait_cinematic_after.png',
+                alt: 'Cinematic Portrait After — Directional Chiaroscuro Lighting',
+                caption: 'Cinematic Portrait (After • Directional Chiaroscuro)',
+                tag: 'CHOPPED KEY LIGHT',
+                desc: 'Editorial lighting recalculation casting hard diagonal geometric shadows across facial contours.'
+              },
+              {
+                src: 'assets/portrait_cinematic_before.jpg',
+                alt: 'Cinematic Portrait Before — Original Raw Casual Plate',
+                caption: 'Cinematic Portrait (Before • Raw Selfie Plate)',
+                tag: 'RAW SOURCE PLATE',
+                desc: 'Unedited mobile capture under flat ambient lighting before neural lighting recalculation.'
+              },
+              {
+                src: 'assets/fashion_portrait_after.jpg',
+                alt: 'Mirrored Gallery Fashion Portrait After',
+                caption: 'Fashion Editorial (After • Mirrored Gallery)',
+                tag: 'FASHION EDITORIAL',
+                desc: 'High-fashion double-breasted suit editorial with recursive mirror reflections and god rays.'
+              },
+              {
+                src: 'assets/fashion_portrait_before.jpg',
+                alt: 'Mirrored Gallery Fashion Portrait Before',
+                caption: 'Fashion Editorial (Before • Casual Photo)',
+                tag: 'RAW SOURCE PLATE',
+                desc: 'Original casual street selfie before haute-couture styling and mirror gallery placement.'
+              },
+              {
+                src: 'assets/ai_visual_lab_1.png',
+                alt: 'AI Visual Lab Directional Lighting Portrait Experiment',
+                caption: 'AI Studio (Directional Key Light Study)',
+                tag: 'LIGHTING STUDY',
+                desc: 'Controlled cinematic key-to-fill ratio exploration isolating facial planes with amber warmth.'
+              },
+              {
+                src: 'assets/moonlit_hero_after.jpg',
+                alt: 'Armored Hero After — Moonlit High Altitude Scene',
+                caption: 'Armored Hero (After • Thruster Volumetrics)',
+                tag: 'CHARACTER COMPOSITE',
+                desc: 'Dual-source illumination pairing glowing ion thrusters with cold lunar edge highlights.'
+              },
+              {
+                src: 'assets/batman_gotham_after.jpg',
+                alt: 'Rainy Gotham Batman After',
+                caption: 'Rainy Gotham (After • Wet Street Composite)',
+                tag: 'NEO-NOIR LIGHTING',
+                desc: 'Neo-noir rainy composite integrating Batman beside parked car with ground reflections.'
+              },
+              {
+                src: 'assets/city_platform_after.jpg',
+                alt: 'Golden Sunrise at Misty City Platform After',
+                caption: 'Golden Sunrise (After • Volumetric Mist)',
+                tag: 'ATMOSPHERIC HAZE',
+                desc: 'Low-angle 2800K solar rays piercing morning valley mist across elevated city platform.'
+              }
+            ]
           }
         ]
       },
@@ -1661,6 +1752,10 @@
   let currentBhaktiVideoId = null;
   let currentVisualLabView = 'all';
   let currentVisualLabItemId = null;
+  let creativeVideoIndex = 0;
+  let creativeAudioIndex = 0;
+  let creativeVisualIndex = 0;
+  let lightboxEl = null;
 
   function buildGoluUniverseHtml(data, activeView, activeProjectId) {
     const brandConcepts = data.collections?.brandConcepts?.projects || [];
@@ -3831,34 +3926,137 @@
                 <p class="modal-subheading-desc">${data.aiCreativeExamples.description}</p>
               </div>
               <div class="modal-creative-examples-grid">
-                ${data.aiCreativeExamples.items.map(item => `
-                  <div class="modal-creative-example-card">
-                    <div class="example-media-container">
-                      ${item.type === 'video' ? `
-                        <video controls preload="metadata" poster="${item.posterSrc}" class="example-media-video">
-                          <source src="${item.videoSrc}" type="video/mp4">
-                          Your browser does not support HTML5 video.
-                        </video>
-                      ` : `
-                        <img src="${item.imageSrc}" alt="${item.alt}" class="example-media-img ${item.type === 'audio' ? 'music-art' : ''}" loading="lazy">
-                      `}
-                      <span class="example-tag">${item.tag}</span>
-                    </div>
-                    <div class="example-content">
-                      <h6 class="example-title">${item.title}</h6>
-                      <p class="example-oneliner">${item.oneLiner}</p>
-                      <div class="example-ad-application">
-                        <strong>Advertising Application:</strong> ${item.adApplication}
-                      </div>
-                      ${item.disclaimer ? `
-                        <div class="example-disclaimer">
-                          <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px;flex-shrink:0"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 2.5a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zm1 8.5H7V7h2v5z"/></svg>
-                          <span>${item.disclaimer}</span>
+                ${data.aiCreativeExamples.items.map(item => {
+                  if (item.type === 'video') {
+                    const currentV = (item.videos && item.videos[0]) || item;
+                    return `
+                      <div class="modal-creative-example-card" id="${item.id}">
+                        <div class="example-media-container video-container" id="ad-creative-video-container">
+                          <video id="creative-video-player" controls playsinline webkit-playsinline preload="metadata" poster="${currentV.posterSrc}" class="example-media-video">
+                            <source src="${currentV.videoSrc}" type="video/mp4">
+                            ${currentV.fallbackSrc ? `<source src="${currentV.fallbackSrc}" type="video/mp4">` : ''}
+                            Your browser does not support HTML5 video.
+                          </video>
+                          <span class="example-tag" id="creative-video-tag">${currentV.tag || item.tag}</span>
                         </div>
-                      ` : ''}
-                    </div>
-                  </div>
-                `).join('')}
+                        <div class="example-content">
+                          <h6 class="example-title">${item.title}</h6>
+                          <p class="example-oneliner" id="creative-video-desc">${item.oneLiner}</p>
+                          <div class="example-switcher-row">
+                            ${item.videos && item.videos.length > 1 ? `
+                              <button type="button" class="example-cycle-btn" onclick="window.cycleCreativeVideo(event)">
+                                <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-7.068 2H.534a.25.25 0 0 1-.192-.41l1.966-2.36a.25.25 0 0 1 .384 0l1.966 2.36a.25.25 0 0 1-.192.41z"/></svg>
+                                <span id="creative-video-cycle-label">Next Video (1 of ${item.videos.length}) ↻</span>
+                              </button>
+                            ` : `
+                              <button type="button" class="example-cycle-btn inline-play-btn" onclick="window.cycleCreativeVideo(event)">
+                                <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px;color:var(--accent-cyan)"><polygon points="4,2 14,8 4,14"/></svg>
+                                <span id="creative-video-cycle-label">Play Complan Spec Ad (0:30)</span>
+                              </button>
+                            `}
+                          </div>
+                          <div class="example-ad-application">
+                            <strong>Advertising Application:</strong> ${item.adApplication}
+                          </div>
+                          ${item.disclaimer ? `
+                            <div class="example-disclaimer">
+                              <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px;flex-shrink:0"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 2.5a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zm1 8.5H7V7h2v5z"/></svg>
+                              <span>${item.disclaimer}</span>
+                            </div>
+                          ` : ''}
+                        </div>
+                      </div>
+                    `;
+                  }
+
+                  if (item.type === 'audio') {
+                    const trackCount = (item.tracks && item.tracks.length) || 0;
+                    const curIdx = trackCount > 0 ? (creativeAudioIndex % trackCount) : 0;
+                    const currentT = trackCount > 0 ? item.tracks[curIdx] : {};
+                    const nextIdx = trackCount > 0 ? ((curIdx + 1) % trackCount) : 0;
+                    const nextT = trackCount > 0 ? item.tracks[nextIdx] : currentT;
+                    return `
+                      <div class="modal-creative-example-card" id="${item.id}">
+                        <div class="example-media-container audio-embed-container" id="ad-creative-audio-container">
+                          <iframe id="creative-audio-iframe" 
+                            class="example-media-iframe" 
+                            src="${currentT.embedUrl || 'https://www.youtube-nocookie.com/embed/JdY3cOjIFHg?rel=0'}" 
+                            title="${currentT.title || 'Ze-Wa Music'}" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                          </iframe>
+                          <span class="example-tag" id="creative-audio-tag">${currentT.tag || item.tag}</span>
+                        </div>
+                        <div class="example-content">
+                          <h6 class="example-title">${item.title}</h6>
+                          <p class="example-oneliner" id="creative-audio-desc">
+                            <strong id="creative-audio-current-title" style="color:var(--text-white);display:block;margin-bottom:0.25rem">
+                              ${currentT.title || 'Stay With Me Tonight (Official Music Video)'}
+                            </strong>
+                            ${item.oneLiner}
+                          </p>
+                          <div class="example-switcher-row">
+                            <button type="button" class="example-cycle-btn" onclick="window.cycleCreativeAudioTrack(event)" title="Cycle to next music track within card">
+                              <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-7.068 2H.534a.25.25 0 0 1-.192-.41l1.966-2.36a.25.25 0 0 1 .384 0l1.966 2.36a.25.25 0 0 1-.192.41z"/></svg>
+                              <span id="creative-audio-cycle-label">Next Track: ${nextT.title || 'Ze-Wa - SLOW'} ↻</span>
+                            </button>
+                          </div>
+                          <div class="example-ad-application">
+                            <strong>Advertising Application:</strong> ${item.adApplication}
+                          </div>
+                        </div>
+                      </div>
+                    `;
+                  }
+
+                  if (item.type === 'visual') {
+                    const imgCount = (item.images && item.images.length) || 0;
+                    const curImgIdx = imgCount > 0 ? (creativeVisualIndex % imgCount) : 0;
+                    const currentImg = imgCount > 0 ? item.images[curImgIdx] : { src: item.imageSrc, alt: item.alt, caption: 'Directional Lighting Experiment', desc: item.oneLiner };
+                    return `
+                      <div class="modal-creative-example-card" id="${item.id}">
+                        <div class="example-media-container visual-container" id="ad-creative-visual-container" onclick="window.openCreativeVisualLightbox(event)" title="Click to view full-size portrait in fullscreen overlay">
+                          <img id="creative-visual-img" 
+                            src="${currentImg.src}" 
+                            alt="${currentImg.alt || currentImg.caption}" 
+                            class="example-media-img" loading="lazy">
+                          <button type="button" class="example-zoom-hint" onclick="window.openCreativeVisualLightbox(event)" title="Enlarge image to full screen" aria-label="Enlarge image to full screen">
+                            <svg viewBox="0 0 16 16" fill="currentColor" style="width:11px;height:11px"><path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-2.5h2.5a.5.5 0 0 0 0-1h-3zm13 0a.5.5 0 0 0-.5.5v2.5a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h2.5zm-13 14a.5.5 0 0 0 .5-.5v-2.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-2.5zm13 0a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-1 0v2.5h-2.5a.5.5 0 0 0 0 1h3z"/></svg>
+                            <span>Enlarge</span>
+                          </button>
+                          <span class="example-tag interactive-tag" id="creative-visual-tag">
+                            ${imgCount > 0 ? `${curImgIdx + 1} / ${imgCount} • ${currentImg.tag || 'PORTRAIT STUDY'}` : item.tag}
+                          </span>
+                        </div>
+                        <div class="example-content">
+                          <h6 class="example-title">${item.title}</h6>
+                          <p class="example-oneliner" id="creative-visual-desc">
+                            <strong id="creative-visual-caption" style="color:var(--text-white);display:block;margin-bottom:0.25rem">
+                              ${currentImg.caption}
+                            </strong>
+                            <span id="creative-visual-detail">${currentImg.desc}</span>
+                          </p>
+                          <div class="example-switcher-row">
+                            <button type="button" class="example-cycle-btn" onclick="window.cycleCreativeVisualImage(event)" title="Cycle to next portrait transformation">
+                              <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-7.068 2H.534a.25.25 0 0 1-.192-.41l1.966-2.36a.25.25 0 0 1 .384 0l1.966 2.36a.25.25 0 0 1-.192.41z"/></svg>
+                              <span id="creative-visual-cycle-label">Cycle Image (${imgCount > 0 ? curImgIdx + 1 : 1} of ${imgCount || 8}) ↻</span>
+                            </button>
+                            <button type="button" class="example-cycle-btn example-enlarge-btn" onclick="window.openCreativeVisualLightbox(event)" title="Enlarge currently displayed portrait to full screen">
+                              <svg viewBox="0 0 16 16" fill="currentColor" style="width:12px;height:12px"><path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-2.5h2.5a.5.5 0 0 0 0-1h-3zm13 0a.5.5 0 0 0-.5.5v2.5a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h2.5zm-13 14a.5.5 0 0 0 .5-.5v-2.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-2.5zm13 0a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-1 0v2.5h-2.5a.5.5 0 0 0 0 1h3z"/></svg>
+                              <span>Enlarge ⛶</span>
+                            </button>
+                          </div>
+                          <div class="example-ad-application">
+                            <strong>Advertising Application:</strong> ${item.adApplication}
+                          </div>
+                        </div>
+                      </div>
+                    `;
+                  }
+
+                  return '';
+                }).join('')}
               </div>
             </div>
           ` : ''}
@@ -4097,7 +4295,23 @@
       const data = PROJECT_DETAILS[id];
       if (!data || !modal) return;
 
-      if (id === '02') {
+      if (id === '01') {
+        const audioItem = data.aiCreativeExamples?.items?.find(it => it.type === 'audio');
+        if (audioItem && audioItem.tracks && audioItem.tracks.length > 1) {
+          creativeAudioIndex = Math.floor(Math.random() * audioItem.tracks.length);
+        } else {
+          creativeAudioIndex = 0;
+        }
+        creativeVisualIndex = 0;
+
+        const visualItem = data.aiCreativeExamples?.items?.find(it => it.type === 'visual');
+        if (visualItem && visualItem.images) {
+          visualItem.images.forEach(img => {
+            const pre = new Image();
+            pre.src = img.src;
+          });
+        }
+      } else if (id === '02') {
         currentGoluView = 'all';
         currentGoluProjectId = null;
       } else if (id === '03') {
@@ -4117,6 +4331,20 @@
       if (titleEl) titleEl.textContent = data.title;
       if (bodyEl) {
         bodyEl.innerHTML = buildProjectModalHtml(data);
+      }
+
+      if (id === '01') {
+        const vPlayer = document.getElementById('creative-video-player');
+        if (vPlayer) {
+          vPlayer.addEventListener('play', () => {
+            const lbl = document.getElementById('creative-video-cycle-label');
+            if (lbl) lbl.textContent = 'Pause Complan Spec Ad';
+          });
+          vPlayer.addEventListener('pause', () => {
+            const lbl = document.getElementById('creative-video-cycle-label');
+            if (lbl) lbl.textContent = 'Play Complan Spec Ad (0:30)';
+          });
+        }
       }
 
       modal.classList.add('open');
@@ -4333,6 +4561,13 @@
       currentVisualLabView = 'all';
       currentVisualLabItemId = null;
 
+      if (typeof closeCreativeVisualLightbox === 'function') {
+        closeCreativeVisualLightbox();
+      }
+
+      const vLabel = document.getElementById('creative-video-cycle-label');
+      if (vLabel) vLabel.textContent = 'Play Complan Spec Ad (0:30)';
+
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
@@ -4341,6 +4576,262 @@
         lastFocusedElement.focus();
       }
     }
+
+    // Creative Examples Interactive Controls & Lightbox
+    function ensureCreativeLightbox() {
+      if (lightboxEl) return lightboxEl;
+      lightboxEl = document.getElementById('creative-visual-lightbox');
+      if (lightboxEl) return lightboxEl;
+
+      lightboxEl = document.createElement('div');
+      lightboxEl.id = 'creative-visual-lightbox';
+      lightboxEl.className = 'creative-visual-lightbox';
+      lightboxEl.setAttribute('role', 'dialog');
+      lightboxEl.setAttribute('aria-modal', 'true');
+      lightboxEl.setAttribute('aria-label', 'Full-screen portrait lighting study view');
+      lightboxEl.innerHTML = `
+        <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close full-screen image view" title="Close (Esc)">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px">
+            <path d="M3 3l10 10M13 3L3 13" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button type="button" class="lightbox-nav-btn prev" id="lightbox-prev-btn" aria-label="Previous portrait" title="Previous (←)">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px">
+            <path d="M10 13L5 8l5-5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button type="button" class="lightbox-nav-btn next" id="lightbox-next-btn" aria-label="Next portrait" title="Next (→)">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px">
+            <path d="M6 3l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="lightbox-content-wrap" id="lightbox-content-wrap">
+          <div class="lightbox-img-frame">
+            <img id="lightbox-target-img" src="" alt="Full-screen portrait study">
+            <span class="example-tag" id="lightbox-tag">1 / 8 • PORTRAIT STUDY</span>
+          </div>
+          <div class="lightbox-caption-bar">
+            <h4 class="lightbox-title" id="lightbox-title"></h4>
+            <p class="lightbox-desc" id="lightbox-desc"></p>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(lightboxEl);
+
+      const closeBtn = lightboxEl.querySelector('#lightbox-close-btn');
+      if (closeBtn) closeBtn.addEventListener('click', closeCreativeVisualLightbox);
+
+      lightboxEl.addEventListener('click', function(e) {
+        const frame = lightboxEl.querySelector('.lightbox-img-frame');
+        const caption = lightboxEl.querySelector('.lightbox-caption-bar');
+        const prev = lightboxEl.querySelector('#lightbox-prev-btn');
+        const next = lightboxEl.querySelector('#lightbox-next-btn');
+
+        if (frame && frame.contains(e.target)) return;
+        if (caption && caption.contains(e.target)) return;
+        if (prev && prev.contains(e.target)) return;
+        if (next && next.contains(e.target)) return;
+
+        closeCreativeVisualLightbox();
+      });
+
+      const prevBtn = lightboxEl.querySelector('#lightbox-prev-btn');
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const p01 = PROJECT_DETAILS['01'];
+          const visualItem = p01?.aiCreativeExamples?.items?.find(it => it.type === 'visual');
+          if (!visualItem || !visualItem.images || visualItem.images.length === 0) return;
+          creativeVisualIndex = (creativeVisualIndex - 1 + visualItem.images.length) % visualItem.images.length;
+          syncVisualUI(visualItem);
+        });
+      }
+
+      const nextBtn = lightboxEl.querySelector('#lightbox-next-btn');
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          window.cycleCreativeVisualImage(e);
+        });
+      }
+
+      return lightboxEl;
+    }
+
+    function updateLightboxContent(curImg, index, total) {
+      if (!lightboxEl) return;
+      const targetImg = lightboxEl.querySelector('#lightbox-target-img');
+      const title = lightboxEl.querySelector('#lightbox-title');
+      const desc = lightboxEl.querySelector('#lightbox-desc');
+      const tag = lightboxEl.querySelector('#lightbox-tag');
+
+      if (targetImg && curImg) {
+        targetImg.src = curImg.src;
+        targetImg.alt = curImg.alt || curImg.caption || 'Computational Portraiture Study';
+      }
+      if (title && curImg) title.textContent = curImg.caption || '';
+      if (desc && curImg) desc.textContent = curImg.desc || '';
+      if (tag && curImg) tag.textContent = (index + 1) + ' / ' + total + ' • ' + (curImg.tag || 'PORTRAIT STUDY');
+    }
+
+    function syncVisualUI(visualItem) {
+      const total = visualItem.images.length;
+      const curImg = visualItem.images[creativeVisualIndex];
+
+      const imgEl = document.getElementById('creative-visual-img');
+      if (imgEl && curImg.src) {
+        imgEl.src = curImg.src;
+        imgEl.alt = curImg.alt || curImg.caption || 'Computational Portraiture';
+      }
+
+      const captionEl = document.getElementById('creative-visual-caption');
+      if (captionEl) {
+        captionEl.textContent = curImg.caption || '';
+      }
+
+      const detailEl = document.getElementById('creative-visual-detail');
+      if (detailEl) {
+        detailEl.textContent = curImg.desc || '';
+      }
+
+      const tagEl = document.getElementById('creative-visual-tag');
+      if (tagEl) {
+        tagEl.textContent = (creativeVisualIndex + 1) + ' / ' + total + ' • ' + (curImg.tag || 'PORTRAIT STUDY');
+      }
+
+      const cycleLabel = document.getElementById('creative-visual-cycle-label');
+      if (cycleLabel) {
+        cycleLabel.textContent = 'Cycle Image (' + (creativeVisualIndex + 1) + ' of ' + total + ') ↻';
+      }
+
+      if (lightboxEl && lightboxEl.classList.contains('is-open')) {
+        updateLightboxContent(curImg, creativeVisualIndex, total);
+      }
+    }
+
+    window.openCreativeVisualLightbox = function(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const lb = ensureCreativeLightbox();
+      const p01 = PROJECT_DETAILS['01'];
+      const visualItem = p01?.aiCreativeExamples?.items?.find(it => it.type === 'visual');
+      if (!visualItem || !visualItem.images || visualItem.images.length === 0) return;
+      const total = visualItem.images.length;
+
+      // Ensure the opened image strictly matches the current card image
+      const displayedImg = document.getElementById('creative-visual-img');
+      if (displayedImg && displayedImg.src) {
+        const foundIdx = visualItem.images.findIndex(function(im) {
+          return displayedImg.src.indexOf(im.src) !== -1;
+        });
+        if (foundIdx >= 0) {
+          creativeVisualIndex = foundIdx;
+        }
+      }
+
+      const curImg = visualItem.images[creativeVisualIndex] || visualItem.images[0];
+      updateLightboxContent(curImg, creativeVisualIndex, total);
+      lb.classList.add('is-open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    function closeCreativeVisualLightbox() {
+      if (!lightboxEl) return;
+      lightboxEl.classList.remove('is-open');
+      lightboxEl.setAttribute('aria-hidden', 'true');
+      const modal = document.getElementById('project-modal');
+      if (!modal || !modal.classList.contains('open')) {
+        document.body.style.overflow = '';
+      }
+    }
+    window.closeCreativeVisualLightbox = closeCreativeVisualLightbox;
+
+    window.cycleCreativeVisualImage = function(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const data = PROJECT_DETAILS['01'];
+      const visualItem = data?.aiCreativeExamples?.items?.find(it => it.type === 'visual');
+      if (!visualItem || !visualItem.images || visualItem.images.length === 0) return;
+
+      creativeVisualIndex = (creativeVisualIndex + 1) % visualItem.images.length;
+      syncVisualUI(visualItem);
+    };
+
+    window.cycleCreativeAudioTrack = function(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const data = PROJECT_DETAILS['01'];
+      const audioItem = data?.aiCreativeExamples?.items?.find(it => it.type === 'audio');
+      if (!audioItem || !audioItem.tracks || audioItem.tracks.length === 0) return;
+
+      creativeAudioIndex = (creativeAudioIndex + 1) % audioItem.tracks.length;
+      const curTrack = audioItem.tracks[creativeAudioIndex];
+      const nextTrack = audioItem.tracks[(creativeAudioIndex + 1) % audioItem.tracks.length];
+
+      const iframe = document.getElementById('creative-audio-iframe');
+      if (iframe && curTrack.embedUrl) {
+        const sep = curTrack.embedUrl.indexOf('?') >= 0 ? '&' : '?';
+        iframe.src = curTrack.embedUrl + sep + 'autoplay=1';
+        iframe.title = curTrack.title || 'Ze-Wa Music';
+      }
+
+      const titleEl = document.getElementById('creative-audio-current-title');
+      if (titleEl) {
+        titleEl.textContent = curTrack.title || '';
+      }
+
+      const tagEl = document.getElementById('creative-audio-tag');
+      if (tagEl) {
+        tagEl.textContent = curTrack.tag || ('TRACK ' + (creativeAudioIndex + 1) + ' OF ' + audioItem.tracks.length);
+      }
+
+      const cycleLabel = document.getElementById('creative-audio-cycle-label');
+      if (cycleLabel) {
+        cycleLabel.textContent = 'Next Track: ' + (nextTrack.title || 'Ze-Wa - SLOW') + ' ↻';
+      }
+    };
+
+    window.cycleCreativeVideo = function(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const p01 = PROJECT_DETAILS['01'];
+      const videoItem = p01?.aiCreativeExamples?.items?.find(it => it.type === 'video');
+      const video = document.getElementById('creative-video-player');
+      const label = document.getElementById('creative-video-cycle-label');
+      if (!video) return;
+
+      if (videoItem && videoItem.videos && videoItem.videos.length > 1) {
+        creativeVideoIndex = (creativeVideoIndex + 1) % videoItem.videos.length;
+        const curV = videoItem.videos[creativeVideoIndex];
+        video.src = curV.videoSrc;
+        if (curV.posterSrc) video.poster = curV.posterSrc;
+        video.load();
+        video.play().catch(() => {});
+        if (label) label.textContent = 'Next Video (' + (creativeVideoIndex + 1) + ' of ' + videoItem.videos.length + ') ↻';
+        const tag = document.getElementById('creative-video-tag');
+        if (tag) tag.textContent = curV.tag || 'VIDEO AD CONCEPT';
+      } else {
+        if (video.paused) {
+          video.play().then(() => {
+            if (label) label.textContent = 'Pause Complan Spec Ad';
+          }).catch(err => {
+            console.warn('Video play prevented or paused:', err);
+          });
+        } else {
+          video.pause();
+          if (label) label.textContent = 'Play Complan Spec Ad (0:30)';
+        }
+      }
+    };
 
     // Attach listeners to explore buttons and card click
     document.querySelectorAll('.explore-btn').forEach(btn => {
@@ -4374,8 +4865,25 @@
     }
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal && modal.classList.contains('open')) {
-        closeModal();
+      if (e.key === 'Escape') {
+        if (lightboxEl && lightboxEl.classList.contains('is-open')) {
+          closeCreativeVisualLightbox();
+          return;
+        }
+        if (modal && modal.classList.contains('open')) {
+          closeModal();
+        }
+      } else if (lightboxEl && lightboxEl.classList.contains('is-open')) {
+        if (e.key === 'ArrowRight') {
+          window.cycleCreativeVisualImage();
+        } else if (e.key === 'ArrowLeft') {
+          const p01 = PROJECT_DETAILS['01'];
+          const visualItem = p01?.aiCreativeExamples?.items?.find(it => it.type === 'visual');
+          if (visualItem && visualItem.images && visualItem.images.length > 0) {
+            creativeVisualIndex = (creativeVisualIndex - 1 + visualItem.images.length) % visualItem.images.length;
+            syncVisualUI(visualItem);
+          }
+        }
       }
     });
   }
