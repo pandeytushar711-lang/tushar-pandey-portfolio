@@ -2798,6 +2798,12 @@ canvas {
   background: #0e111a;
 }
 
+.modal-gallery-item img[src*="logo"] {
+  object-fit: contain;
+  background: #ffffff;
+  padding: 1.2rem;
+}
+
 .modal-gallery-caption {
   padding: 0.85rem 1rem;
   font-size: 0.83rem;
@@ -2825,7 +2831,25 @@ canvas {
 
 .modal-video-box video {
   width: 100%;
-  max-height: 420px;
+  max-height: 480px;
+  display: block;
+  background: #000;
+}
+
+.modal-video-box.vertical-video-box {
+  max-width: 320px;
+  margin: 0 auto 1.2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 229, 255, 0.32);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 24px rgba(0, 229, 255, 0.14);
+}
+
+.modal-video-box.vertical-video-box video,
+.golu-case-study-player.ratio-9-16 {
+  width: 100%;
+  max-height: 540px;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
   display: block;
   background: #000;
 }
@@ -3497,6 +3521,154 @@ canvas {
   line-height: 1.45;
   color: #cbd5e1;
   text-align: left;
+}
+
+/* AI Creative Studio — Sections 3 & 4 (Campaigns & Experiments) */
+.golu-collection-badge.cyan {
+  color: var(--accent-cyan);
+}
+.golu-collection-badge.amber {
+  color: #f59e0b;
+}
+
+.studio-campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+  margin-bottom: 1.6rem;
+}
+
+.studio-campaign-card {
+  background: #080c16;
+  border: 1px solid rgba(0, 229, 255, 0.16);
+  border-radius: 12px;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.studio-campaign-card:hover {
+  border-color: rgba(0, 229, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 229, 255, 0.08);
+}
+
+.studio-campaign-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.studio-campaign-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.studio-campaign-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.studio-campaign-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+}
+
+.studio-campaign-val {
+  color: #cbd5e1;
+}
+
+.studio-experiments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+.studio-experiment-card {
+  background: #07090e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.studio-experiment-card:hover {
+  border-color: rgba(0, 229, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.studio-experiment-media {
+  width: 100%;
+  height: 180px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.studio-experiment-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.studio-experiment-media img.contain-logo {
+  object-fit: contain;
+  background: #ffffff;
+  padding: 1.2rem;
+}
+
+.studio-experiment-body {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.studio-experiment-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.studio-experiment-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.studio-experiment-desc {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #94a3b8;
+  margin: 0.2rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .studio-campaigns-grid,
+  .studio-experiments-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* YouTube Embed Containers & Aspect Ratios (Projects 03 & 04) */

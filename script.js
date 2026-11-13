@@ -681,20 +681,163 @@
     },
 
     '02': {
-      category: 'PROJECT 02 — GOLU UNIVERSE',
-      title: 'Golu Universe',
-      subtitle: 'AI Video Creation & Creative Storytelling',
-      leadText: 'An exploration of AI-powered storytelling, animated characters, and brand-inspired video concepts — combining creative direction, visual experimentation, and narrative thinking to turn ideas into engaging video experiences.',
+      category: 'PROJECT 02 — BRAND CAMPAIGNS & VIDEO PRODUCTION',
+      title: 'AI Creative Studio',
+      subtitle: 'Brand Campaigns & Video Production',
+      leadText: 'A comprehensive AI-powered creative advertising and video production portfolio combining strategic creative direction, generative video synthesis, character IP animation, and multi-format commercial campaign execution.',
       isGoluUniverse: true,
+      isCreativeStudio: true,
 
       collections: {
         brandConcepts: {
-          id: 'brand-concepts',
-          title: 'AI Brand Concepts',
-          subtitle: 'Speculative Advertising & Brand Storytelling',
-          badge: 'COLLECTION A • SPECULATIVE ADVERTISING',
-          desc: 'Self-initiated brand-inspired concepts exploring how AI-generated visuals, character-led narratives, and creative direction can bring product stories to life.',
+          id: 'brand-ad-creatives',
+          title: 'Brand Ad Creatives',
+          subtitle: 'Commercial Brand Campaigns & Speculative Ad Concepts',
+          badge: 'SECTION 1 • BRAND AD CREATIVES',
+          desc: 'Client-commissioned healthcare advertising and speculative brand concepts exploring how AI-generated visuals, character-led narratives, and creative direction bring brand stories to life.',
           projects: [
+            {
+              id: 'maxora-clinic-concept',
+              title: 'Maxora Superspeciality Clinic — AI-Powered Dental Awareness Campaign',
+              projectType: 'Client & Speculative Brand Creative',
+              category: 'Healthcare Ad Creative',
+              coreDiscipline: 'Character-Led Healthcare Storytelling',
+              brandReference: 'Maxora Superspeciality Clinic (Advanced Dental Care)',
+              shortSummary: 'An AI-generated dental awareness video featuring a custom 3D tooth character, developed to make healthcare communication more engaging through creative storytelling and AI-powered video production.',
+              thumbnail: 'assets/maxora_thumb.jpg',
+              videoSrc: 'assets/maxora_dental_ai_video.mp4',
+              posterSrc: 'assets/maxora_poster.jpg',
+              aspectRatio: '9:16',
+              disclaimer: 'Healthcare Creative Concept: Developed to illustrate how character-driven AI animation can transform clinical dental education and patient awareness into empathetic digital storytelling.',
+              ctaText: 'Explore Brand Case Study',
+
+              // A. Creative Insight & Premise
+              creativeInsight: {
+                title: 'The Creative Premise & Insight',
+                content: 'Traditional clinical advertisements often suffer from intimidating dental jargon, stark surgical visuals, or anxiety-inducing messaging that creates friction for patients seeking care. The creative premise for Maxora Superspeciality Clinic was to dismantle dental phobia by humanizing clinical dental hygiene through an expressive, charismatic 3D tooth protagonist. By anchoring the narrative around relatable everyday habits and preventive care, complex dental wellness concepts become welcoming, informative, and disarming for both adults and young families.',
+                note: 'Designed as an educational dental awareness campaign focused on empathetic patient communication and preventive checkups, adhering to ethical healthcare marketing standards.'
+              },
+
+              // E. Intended Audience & Objective
+              audienceAndObjective: {
+                intendedAudience: 'Urban patients, working professionals, and families seeking trustworthy, compassionate dental care without the anxiety traditionally associated with clinical treatments.',
+                creativeObjective: 'Design and produce a cinematic, character-led AI awareness video that positions Maxora Superspeciality Clinic as an approachable, state-of-the-art dental destination while educating viewers on proactive oral wellness.',
+                resultsNote: 'Creative ad production and visual asset pipeline — developed for digital multi-channel distribution across Instagram Reels, YouTube Shorts, and clinic waiting-lounge displays.'
+              },
+
+              // B. Story Development & Narrative Sequence
+              storyDevelopment: {
+                title: 'Story Development & Narrative Sequence',
+                steps: [
+                  { step: '01', title: 'Character Introduction', desc: 'Introduces the cheerful 3D tooth character in a vibrant setting, establishing immediate visual warmth and viewer rapport.' },
+                  { step: '02', title: 'Everyday Oral Challenges', desc: 'Depicts relatable daily dental challenges — plaque accumulation, sweet cravings, and irregular brushing routines — in an entertaining, non-fear-based visual style.' },
+                  { step: '03', title: 'The Call for Expert Care', desc: 'Shows the character realizing that home brushing alone is not enough, bridging everyday habits with the necessity of periodic professional examination.' },
+                  { step: '04', title: 'Clinical Precision & Care', desc: 'Seamlessly transitions to the modern, hygienic, and welcoming environment of Maxora Superspeciality Clinic with advanced diagnostic equipment.' },
+                  { step: '05', title: 'Radiant Smile & Resolution', desc: 'Concludes with the restored, sparkling character celebrating healthy teeth, paired with the clinic branding, consultation prompt, and warm call-to-action.' }
+                ]
+              },
+
+              // C. The Creative Thought Process
+              thoughtProcess: {
+                title: 'The Creative Thought Process',
+                reasons: [
+                  {
+                    heading: 'Disarming Dental Anxiety',
+                    desc: 'A stylized 3D tooth character immediately relieves subconscious medical apprehension, turning clinical guidance into engaging entertainment.'
+                  },
+                  {
+                    heading: 'Educational Story Arc',
+                    desc: 'Structuring the script around prevention and timely intervention educates the patient before pitching clinical appointment booking.'
+                  },
+                  {
+                    heading: 'Modern Clinical Trust',
+                    desc: 'Balancing friendly animation with Maxora’s clean corporate visual identity reinforces medical authority and professional standards.'
+                  },
+                  {
+                    heading: 'Vertical 9:16 Video Format',
+                    desc: 'Engineered natively for smartphone retention, social media reels, and high-engagement vertical video ad placements.'
+                  },
+                  {
+                    heading: 'AI-Powered Rapid Iteration',
+                    desc: 'Leveraged generative AI workflows for 3D character design, volumetric lighting, and scene synthesis, cutting traditional 3D studio turnaround by over 70%.'
+                  },
+                  {
+                    heading: 'Strong Brand Recall',
+                    desc: 'The unique character mascot leaves a lasting impression that differentiates Maxora from generic stock-video healthcare commercials.'
+                  }
+                ]
+              },
+
+              // H. Key Creative Decisions
+              keyDecisions: [
+                { decision: '3D tooth character as protagonist', reason: 'Replaces clinical intimidation with empathy, appeal, and universal relatability across age groups.' },
+                { decision: '9:16 vertical cinematography', reason: 'Maximizes mobile screen immersion for social video ad campaigns, Instagram Reels, and Shorts.' },
+                { decision: 'Preventive care narrative angle', reason: 'Drives patient proactive checkups rather than waiting for painful emergency dental situations.' },
+                { decision: 'Seamless logo integration at resolution', reason: 'Anchors the positive emotional resolution directly to Maxora Superspeciality Clinic’s brand identity.' }
+              ],
+
+              // D. Brand Integration & Compliance Guardrails
+              brandIntegration: {
+                title: 'Brand Integration & Compliance Guardrails',
+                guidelines: [
+                  {
+                    label: 'Accurate Clinical Depiction',
+                    detail: 'Ensures animated visual elements adhere to standard professional dental hygiene protocols without misrepresenting dental anatomy or treatments.'
+                  },
+                  {
+                    label: 'No Exaggerated Pain Claims',
+                    detail: 'Avoids sensationalized depictions of dental decay or pain to preserve positive patient engagement and healthcare brand dignity.'
+                  },
+                  {
+                    label: 'Clear Brand Association',
+                    detail: 'Features official Maxora Superspeciality Clinic logo, verified healthcare branding guidelines, and distinct medical typography.'
+                  }
+                ]
+              },
+
+              // F. Creative Direction Pillars
+              creativeDirectionPillars: [
+                { title: 'Friendly Healthcare Storytelling', desc: 'Bridging technical dental science with engaging character-driven digital animation.' },
+                { title: '3D Character Consistency', desc: 'Ensuring facial expression, enamel shader reflection, and character proportions remain stable across all cuts.' },
+                { title: 'Clinical Cleanliness & Warmth', desc: 'Pairing crisp medical cyan and clean white tones with warm, reassuring ambient illumination.' },
+                { title: 'Dynamic Camera Choreography', desc: 'Utilizing cinematic pans, close-ups, and smooth transitions tailored for fast-paced vertical video viewing.' },
+                { title: 'Empathetic Healthcare Pacing', desc: 'Crafting the narrative rhythm to inform and reassure the viewer rather than rush through promotional sales speak.' },
+                { title: 'Generative Production Pipeline', desc: 'Deploying state-of-the-art AI video synthesis, lighting control, and digital compositing for studio-grade execution.' }
+              ],
+
+              // Visual Development Assets
+              visualAssets: [
+                {
+                  src: 'assets/maxora_poster.jpg',
+                  alt: 'Maxora Dental AI Video Character Keyframe',
+                  title: 'Custom 3D Tooth Character Keyframe Render',
+                  desc: 'High-fidelity AI-generated 3D character keyframe illustrating the expressive tooth mascot under studio lighting, showing enamel subsurface scattering and stylized facial features.'
+                },
+                {
+                  src: 'assets/maxora_logo.jpg',
+                  alt: 'Maxora Superspeciality Clinic Official Branding',
+                  title: 'Clinic Brand Identity & Signage Alignment',
+                  desc: 'Official Maxora Superspeciality Clinic visual identity and typography reference used to align color palettes and campaign title cards.'
+                }
+              ],
+
+              // I. Potential Applications
+              potentialApplications: [
+                'Social media performance video ads (Instagram Reels & Meta Ads) driving clinic footfall and appointment bookings.',
+                'Waiting-lounge digital screen educational loops reinforcing patient comfort and hygiene awareness.',
+                'Multi-part episodic healthcare series tackling orthodontics, teeth whitening, pediatric dentistry, and dental implants.',
+                'Omni-channel patient onboarding and website welcome hero visual storytelling.'
+              ],
+
+              // My Contribution
+              myContribution: [
+                'End-to-end creative direction, healthcare narrative structuring, and script ideation.',
+                'AI prompt architecture and character model consistency engineering for the 3D tooth protagonist.',
+                'Generative video scene synthesis, camera movement pacing, and lighting calibration.',
+                'Brand asset alignment integrating Maxora Superspeciality Clinic visual identity and final editorial finishing.'
+              ]
+            },
+
             {
               id: 'complan-concept',
               title: 'Complan — AI Brand Concept',
@@ -712,7 +855,8 @@
               // A. Creative Insight & Premise
               creativeInsight: {
                 title: 'The Creative Premise & Insight',
-                content: 'The core creative idea was to build a relatable, human-centered story around a child character putting dedicated physical effort into his own growth. Golu is a young animated character who exercises diligently because he wants to grow taller. The concept explores the insight that physical exercise and personal determination are only one half of the growth journey — healthy daily habits, supportive parenting, and balanced nutrition form the vital foundation. This is framed strictly as a narrative creative premise rather than a medical or guaranteed growth claim.'
+                content: 'The core creative idea was to build a relatable, human-centered story around a child character putting dedicated physical effort into his own growth. Golu is a young animated character who exercises diligently because he wants to grow taller. The concept explores the insight that physical exercise and personal determination are only one half of the growth journey — healthy daily habits, supportive parenting, and balanced nutrition form the vital foundation. This is framed strictly as a narrative creative premise rather than a medical or guaranteed growth claim.',
+                note: 'Framed strictly as a narrative creative premise exploring childhood determination and supportive parenting, not as a medical or guaranteed growth claim.'
               },
 
               // E. Intended Audience & Objective
@@ -824,17 +968,24 @@
                 'Episodic branded short-form content for Instagram Reels, YouTube Shorts, and digital entertainment channels.',
                 'Original brand IP and mascot universe development for continuous brand recall and community engagement.',
                 'Rapid speculative creative pitches enabling creative directors to visualize campaign concepts before greenlighting full production.'
+              ],
+
+              // My Contribution
+              myContribution: [
+                'Creative direction, script development, and narrative arc design.',
+                'Character consistency prompting and visual asset pipeline formulation.',
+                'Scene pacing, audio alignment, and final video editing.'
               ]
-            }
+            },
           ]
         },
 
         originalStories: {
-          id: 'original-stories',
-          title: 'Original AI Stories',
-          subtitle: 'Original Characters, Stories & Animation',
-          badge: 'COLLECTION B • ORIGINAL ANIMATION',
-          desc: 'Original AI-assisted storytelling built around imaginative characters, entertaining moments, and narrative-driven animated videos.',
+          id: 'character-storytelling',
+          title: 'AI Character Storytelling',
+          subtitle: 'Golu Universe — Original Characters, IP & Animated Reels',
+          badge: 'SECTION 2 • CHARACTER STORYTELLING',
+          desc: 'Original AI-assisted character animation and episodic narrative universe built around the Golu IP, exploring relatable storytelling, expressive motion, and short-form video engagement.',
           stories: [
             {
               id: 'golu-story-01',
@@ -939,6 +1090,80 @@
               shortSummary: 'Original character animation and AI storytelling short produced for Instagram Reels.',
               storyPremise: 'An original AI-assisted character animation short exploring visual narrative, expressive movement, and character-driven moments.',
               ctaText: 'Open on Instagram'
+            }
+          ]
+        },
+
+        videoProduction: {
+          id: 'video-production',
+          title: 'AI Video Production',
+          subtitle: 'Brand Videos, Production Pipelines & Campaign Architecture',
+          badge: 'SECTION 3 • AI VIDEO PRODUCTION',
+          desc: 'End-to-end commercial video production pipelines integrating human storycraft, prompt architecture, generative video tools, camera choreography, and multi-format campaign delivery (9:16 vertical & 16:9 cinematic).',
+          campaigns: [
+            {
+              id: 'maxora-campaign',
+              title: 'Maxora Superspeciality Clinic — AI Dental Awareness Campaign',
+              badge: 'HEALTHCARE AD • CLIENT CONCEPT',
+              format: '9:16 Vertical Video (1080×1920) • 30fps • High-Impact Social Placement',
+              objective: 'Patient dental anxiety reduction, preventive hygiene education, and appointment booking generation.',
+              pipeline: 'ChatGPT (Script) → Kling AI & Higgsfield AI (3D Tooth Animation & Motion) → Premiere Pro (Pacing & Audio Sync)',
+              deliverables: 'Primary Vertical Campaign Video (32s), Digital Screen Waiting-Lounge Loop, Social Media Cutdowns.'
+            },
+            {
+              id: 'complan-campaign',
+              title: 'Complan Royale — FMCG Speculative Video Campaign',
+              badge: 'FMCG BRAND STORY • SPECULATIVE CONCEPT',
+              format: '16:9 Cinematic Video (1080p) • Warm Domestic Morning Tone',
+              objective: 'Brand recall modernization, emotional parent-child bond, and wholesome breakfast nutrition storytelling.',
+              pipeline: 'Google Gemini (Story Beats) → Canva (Visual Layout & Packaging Alignment) → Google Flow / Veo & Kling AI (Scene Synthesis)',
+              deliverables: 'Hero Brand Story Video (30s), Keyframe Storyboard Grid, Episodic Mascot Framework.'
+            }
+          ]
+        },
+
+        creativeExperiments: {
+          id: 'creative-experiments',
+          title: 'Creative Experiments',
+          subtitle: 'AI Visual Concepts, Lighting Studies & Character Prototyping',
+          badge: 'SECTION 4 • CREATIVE EXPERIMENTS',
+          desc: 'Systematic prompt exploration and visual concept development prototyping enamel subsurface scattering, cinematic chiaroscuro, brand packaging integration, and character consistency.',
+          experiments: [
+            {
+              id: 'exp-01',
+              title: '3D Enamel Shader & Subsurface Scattering Study',
+              subject: 'Maxora Tooth Protagonist',
+              category: 'Character Rendering',
+              tools: 'Kling AI • Volumetric Diffusion',
+              image: 'assets/maxora_poster.jpg',
+              insight: 'Calibrated lighting prompts to give the 3D enamel a lifelike glossy translucency with warm subsurface scatter, avoiding artificial plasticky textures.'
+            },
+            {
+              id: 'exp-02',
+              title: 'Commercial Visual Identity & Clinical Signage Alignment',
+              subject: 'Maxora Superspeciality Clinic Identity',
+              category: 'Brand Integration',
+              tools: 'Vector Alignment • Precision Typography',
+              image: 'assets/maxora_logo.jpg',
+              insight: 'Incorporated official medical branding guidelines, clinic color hierarchies, and professional typography to establish authentic institutional authority.'
+            },
+            {
+              id: 'exp-03',
+              title: 'Golden-Hour Morning Light & Domestic Character Render',
+              subject: 'Golu Complan Breakfast Scene',
+              category: 'Atmospheric Lighting',
+              tools: 'Higgsfield AI • Warm Chiaroscuro',
+              image: 'assets/golu_complan.png',
+              insight: 'Explored natural morning sunlight pouring into a kitchen, creating soft specular highlights on glassware and authentic emotional warmth.'
+            },
+            {
+              id: 'exp-04',
+              title: 'Retail Packaging & Product Reference Hierarchy',
+              subject: 'Complan Royale Chocolate Packaging',
+              category: 'Retail Fidelity',
+              tools: 'Canva • Generative Consistency',
+              image: 'assets/comp.jpg',
+              insight: 'Maintained strict packaging fidelity matching retail shelf recognition, nutritional badges, and iconic chocolate swirls within generative environments.'
             }
           ]
         }
@@ -1760,14 +1985,19 @@
   function buildGoluUniverseHtml(data, activeView, activeProjectId) {
     const brandConcepts = data.collections?.brandConcepts?.projects || [];
     const originalStories = data.collections?.originalStories?.stories || [];
+    const videoProduction = data.collections?.videoProduction || {};
+    const creativeExperiments = data.collections?.creativeExperiments || {};
     const toolsAndWorkflow = data.toolsAndWorkflow || {};
 
     // ------------------------------------------------------------------------
-    // CASE STUDY VIEW: COMPLAN BRAND CONCEPT
+    // CASE STUDY VIEW: COMPLAN & BRAND CONCEPTS
     // ------------------------------------------------------------------------
-    if (activeView === 'complan-case-study') {
+    if (activeView === 'complan-case-study' || activeView === 'brand-case-study') {
       const p = brandConcepts.find(item => item.id === (activeProjectId || 'complan-concept')) || brandConcepts[0];
       if (!p) return `<p>Project concept not found.</p>`;
+
+      const isVertical = p.aspectRatio === '9:16';
+      const shortBreadcrumb = p.id === 'maxora-clinic-concept' ? 'Maxora Case Study' : (p.id === 'complan-concept' ? 'Complan Case Study' : (p.title.includes('—') ? p.title.split('—')[0].trim() : p.title) + ' Case Study');
 
       return `
         <div class="golu-case-study-view">
@@ -1778,20 +2008,20 @@
               <span>Back to Collections</span>
             </button>
             <div class="golu-breadcrumb-trail">
-              <span>Golu Universe</span>
+              <span>AI Creative Studio</span>
               <span class="sep">/</span>
-              <span>AI Brand Concepts</span>
+              <span>Brand Ad Creatives</span>
               <span class="sep">/</span>
-              <span class="current">Complan Case Study</span>
+              <span class="current">${shortBreadcrumb}</span>
             </div>
           </div>
 
           <!-- Header & Project Identity -->
           <div class="golu-case-study-header">
             <div class="golu-badge-group">
-              <span class="modal-badge demo">SELF-INITIATED CONCEPT</span>
-              <span class="modal-badge concept">AI BRAND CONCEPTS</span>
-              <span class="modal-badge planned">CHARACTER-LED STORYTELLING</span>
+              <span class="modal-badge demo">${(p.projectType || 'BRAND CONCEPT').toUpperCase()}</span>
+              <span class="modal-badge concept">${(p.category || 'AI BRAND CONCEPTS').toUpperCase()}</span>
+              <span class="modal-badge planned">${(p.coreDiscipline || 'CHARACTER-LED STORYTELLING').toUpperCase()}</span>
             </div>
             <h3 class="golu-case-study-title">${p.title}</h3>
             <div class="golu-case-study-meta">
@@ -1803,7 +2033,7 @@
             <div class="modal-disclaimer-box" style="margin:1rem 0 1.5rem">
               <svg class="modal-disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               <div>
-                <strong>Self-Initiated Concept Notice:</strong> ${p.disclaimer}
+                <strong>${p.projectType ? p.projectType + ' Notice:' : 'Concept Notice:'}</strong> ${p.disclaimer}
               </div>
             </div>
           </div>
@@ -1811,14 +2041,14 @@
           <!-- G. Final Video Presentation -->
           <div class="modal-section" style="margin-top:0">
             <div class="modal-section-title">Final Video Presentation</div>
-            <div class="modal-video-box">
-              <video controls preload="metadata" poster="${p.posterSrc}" style="width:100%;max-height:480px;display:block;background:#000;">
+            <div class="modal-video-box ${isVertical ? 'vertical-video-box' : ''}">
+              <video controls playsinline webkit-playsinline preload="metadata" poster="${p.posterSrc}" class="golu-case-study-player ${isVertical ? 'ratio-9-16' : ''}" style="${isVertical ? '' : 'width:100%;max-height:480px;display:block;background:#000;'}">
                 <source src="${p.videoSrc}" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
             </div>
             <div style="font-size:0.8rem;color:var(--text-dim);text-align:center;margin-top:0.4rem">
-              Final Video Presentation — Self-Initiated Brand Storytelling Concept (1080p, MP4)
+              Final Video Presentation — ${p.title} (${isVertical ? '1080x1920 9:16 Vertical Video' : '1080p, MP4'})
             </div>
           </div>
 
@@ -1831,7 +2061,7 @@
               </p>
               <div class="golu-insight-note">
                 <svg viewBox="0 0 16 16" fill="currentColor" style="width:14px;height:14px;flex-shrink:0;color:var(--accent-cyan)"><circle cx="8" cy="8" r="4"/></svg>
-                <span>Framed strictly as a narrative creative premise exploring childhood determination and supportive parenting, not as a medical or guaranteed growth claim.</span>
+                <span>${p.creativeInsight.note || 'Framed strictly as a narrative creative premise exploring childhood determination and supportive parenting, not as a medical or guaranteed growth claim.'}</span>
               </div>
             </div>
           </div>
@@ -2002,6 +2232,23 @@
             </ul>
           </div>
 
+          <!-- My Contribution Section -->
+          ${p.myContribution ? `
+            <div class="modal-section">
+              <div class="modal-section-title">Creative Direction &amp; Key Contribution</div>
+              <p class="modal-subheading-desc" style="margin-bottom:0.9rem">Core creative, AI production, and editorial responsibilities delivered on this project:</p>
+              <div class="modal-workflow-steps">
+                ${p.myContribution.map((contrib, cIdx) => `
+                  <div class="modal-workflow-step">
+                    <div class="modal-workflow-num">0${cIdx + 1}</div>
+                    <div class="modal-workflow-title">Contribution Area 0${cIdx + 1}</div>
+                    <div class="modal-workflow-desc">${contrib}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
           <!-- Bottom Back Navigation -->
           <div style="margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;align-items:center">
             <button type="button" class="golu-back-btn" onclick="window.showGoluView('all')">
@@ -2031,9 +2278,9 @@
               <span>Back to Original Stories</span>
             </button>
             <div class="golu-breadcrumb-trail">
-              <span>Golu Universe</span>
+              <span>AI Creative Studio</span>
               <span class="sep">/</span>
-              <span>Original AI Stories</span>
+              <span>AI Character Storytelling</span>
               <span class="sep">/</span>
               <span class="current">${s.title}</span>
             </div>
@@ -2108,10 +2355,17 @@
     }
 
     // ------------------------------------------------------------------------
-    // LANDING VIEW: COLLECTIONS OVERVIEW
+    // LANDING VIEW: AI CREATIVE STUDIO (4 SECTIONS)
     // ------------------------------------------------------------------------
-    const isBrandActive = activeView === 'all' || activeView === 'brand-concepts';
-    const isStoryActive = activeView === 'all' || activeView === 'original-stories';
+    const isBrandActive = activeView === 'all' || activeView === 'brand-concepts' || activeView === 'brand-ad-creatives';
+    const isStoryActive = activeView === 'all' || activeView === 'original-stories' || activeView === 'character-storytelling';
+    const isVideoActive = activeView === 'all' || activeView === 'video-production';
+    const isExpActive = activeView === 'all' || activeView === 'creative-experiments';
+
+    const brandSection = data.collections?.brandConcepts || {};
+    const storySection = data.collections?.originalStories || {};
+    const videoSection = data.collections?.videoProduction || {};
+    const expSection = data.collections?.creativeExperiments || {};
 
     return `
       <div class="golu-landing-view">
@@ -2123,31 +2377,41 @@
           </p>
         </div>
 
-        <!-- Navigation Tabs -->
-        <div class="golu-nav-tabs" role="tablist" aria-label="Golu Universe Collections">
+        <!-- Navigation Tabs across 4 Studio Sections -->
+        <div class="golu-nav-tabs" role="tablist" aria-label="AI Creative Studio Sections">
           <button type="button" class="golu-nav-tab ${activeView === 'all' ? 'active' : ''}" onclick="window.showGoluView('all')" role="tab" aria-selected="${activeView === 'all'}">
-            <span>All Collections</span>
-            <span class="tab-count">${brandConcepts.length + originalStories.length}</span>
+            <span>All Work</span>
+            <span class="tab-count">${brandConcepts.length + originalStories.length + 6}</span>
           </button>
-          <button type="button" class="golu-nav-tab ${activeView === 'brand-concepts' ? 'active' : ''}" onclick="window.showGoluView('brand-concepts')" role="tab" aria-selected="${activeView === 'brand-concepts'}">
-            <span>AI Brand Concepts</span>
+          <button type="button" class="golu-nav-tab ${(activeView === 'brand-concepts' || activeView === 'brand-ad-creatives') ? 'active' : ''}" onclick="window.showGoluView('brand-concepts')" role="tab" aria-selected="${activeView === 'brand-concepts' || activeView === 'brand-ad-creatives'}">
+            <span>Brand Ad Creatives</span>
             <span class="tab-count">${brandConcepts.length}</span>
           </button>
-          <button type="button" class="golu-nav-tab ${activeView === 'original-stories' ? 'active' : ''}" onclick="window.showGoluView('original-stories')" role="tab" aria-selected="${activeView === 'original-stories'}">
-            <span>Original AI Stories</span>
-            <span class="tab-count">${originalStories.length > 0 ? originalStories.length : 'Coming Soon'}</span>
+          <button type="button" class="golu-nav-tab ${(activeView === 'original-stories' || activeView === 'character-storytelling') ? 'active' : ''}" onclick="window.showGoluView('original-stories')" role="tab" aria-selected="${activeView === 'original-stories' || activeView === 'character-storytelling'}">
+            <span>AI Character Storytelling</span>
+            <span class="tab-count">${originalStories.length}</span>
+          </button>
+          <button type="button" class="golu-nav-tab ${activeView === 'video-production' ? 'active' : ''}" onclick="window.showGoluView('video-production')" role="tab" aria-selected="${activeView === 'video-production'}">
+            <span>AI Video Production</span>
+            <span class="tab-count">2 Campaigns</span>
+          </button>
+          <button type="button" class="golu-nav-tab ${activeView === 'creative-experiments' ? 'active' : ''}" onclick="window.showGoluView('creative-experiments')" role="tab" aria-selected="${activeView === 'creative-experiments'}">
+            <span>Creative Experiments</span>
+            <span class="tab-count">4 Studies</span>
           </button>
         </div>
 
-        <!-- COLLECTION A: AI Brand Concepts -->
+        <!-- ================================================================== -->
+        <!-- SECTION 1: Brand Ad Creatives (Complan & Maxora Superspeciality)   -->
+        <!-- ================================================================== -->
         ${isBrandActive ? `
           <div class="golu-collection-section">
             <div class="golu-collection-header">
-              <div class="golu-collection-badge">COLLECTION A • SPECULATIVE ADVERTISING</div>
-              <h3 class="golu-collection-title">AI Brand Concepts</h3>
-              <div class="golu-collection-subtitle">Speculative Advertising &amp; Brand Storytelling</div>
+              <div class="golu-collection-badge">${brandSection.badge || 'SECTION 1 • BRAND AD CREATIVES'}</div>
+              <h3 class="golu-collection-title">${brandSection.title || 'Brand Ad Creatives'}</h3>
+              <div class="golu-collection-subtitle">${brandSection.subtitle || 'Commercial Brand Campaigns & Speculative Ad Concepts'}</div>
               <p class="golu-collection-desc">
-                Self-initiated brand-inspired concepts exploring how AI-generated visuals, character-led narratives, and creative direction can bring product stories to life.
+                ${brandSection.desc || 'Client-commissioned healthcare advertising and speculative brand concepts exploring how AI-generated visuals, character-led narratives, and creative direction bring brand stories to life.'}
               </p>
             </div>
 
@@ -2166,7 +2430,7 @@
                   <div class="golu-card-body">
                     <div class="golu-card-meta">
                       <span class="golu-brand-ref">${p.brandReference}</span>
-                      <span class="golu-discipline-ref">${p.coreDiscipline}</span>
+                      <span class="golu-discipline-ref">${p.category ? p.category + ' • ' : ''}${p.coreDiscipline}</span>
                     </div>
                     <h4 class="golu-card-title">${p.title}</h4>
                     <p class="golu-card-summary">${p.shortSummary}</p>
@@ -2183,15 +2447,17 @@
           </div>
         ` : ''}
 
-        <!-- COLLECTION B: Original AI Stories -->
+        <!-- ================================================================== -->
+        <!-- SECTION 2: AI Character Storytelling (Golu Universe)               -->
+        <!-- ================================================================== -->
         ${isStoryActive ? `
           <div class="golu-collection-section">
             <div class="golu-collection-header">
-              <div class="golu-collection-badge violet">COLLECTION B • ORIGINAL ANIMATION</div>
-              <h3 class="golu-collection-title">Original AI Stories</h3>
-              <div class="golu-collection-subtitle">Original Characters, Stories &amp; Animation</div>
+              <div class="golu-collection-badge violet">${storySection.badge || 'SECTION 2 • CHARACTER STORYTELLING'}</div>
+              <h3 class="golu-collection-title">${storySection.title || 'AI Character Storytelling'}</h3>
+              <div class="golu-collection-subtitle">${storySection.subtitle || 'Golu Universe — Original Characters, IP & Animated Reels'}</div>
               <p class="golu-collection-desc">
-                Original AI-assisted storytelling built around imaginative characters, entertaining moments, and narrative-driven animated videos.
+                ${storySection.desc || 'Original AI-assisted character animation and episodic narrative universe built around the Golu IP, exploring relatable storytelling, expressive motion, and short-form video engagement.'}
               </p>
             </div>
 
@@ -2239,63 +2505,129 @@
                   </div>
                 `).join('')}
               </div>
-            ` : `
-              <div class="golu-empty-state-card">
-                <div class="golu-empty-icon violet">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
-                </div>
-                <span class="golu-empty-badge violet">IN ACTIVE PRODUCTION</span>
-                <h4 class="golu-empty-title">New Original Stories Coming Soon</h4>
-                <p class="golu-empty-desc">
-                  Original character adventures and comedy sketches are in active production and will be showcased here.
-                </p>
-                <div class="golu-empty-meta">
-                  <span class="golu-meta-pill"><strong>Format:</strong> Original Character IP &amp; Episodic Shorts</span>
-                  <span class="golu-meta-pill"><strong>Status:</strong> Active Character &amp; Scene Animation</span>
-                </div>
-              </div>
-            `}
+            ` : ''}
           </div>
         ` : ''}
 
-        <!-- Section 6: AI Tools Used in This Project in Landing View -->
-        <div class="modal-section" style="margin-top:2.5rem">
-          <div class="modal-section-title">AI Tools Used in This Project</div>
-          <p class="modal-subheading-desc" style="margin-bottom:1.4rem">
-            ${toolsAndWorkflow.intro || 'A confirmed creative production workflow integrating human storytelling, prompt architecture, visual design, and generative AI video creation.'}
-          </p>
-
-          <div class="golu-tools-grid">
-            ${(toolsAndWorkflow.tools || []).map(t => `
-              <div class="modal-platform-card golu-tool-card">
-                <div class="golu-tool-header">
-                  <h4>
-                    <svg viewBox="0 0 16 16" fill="currentColor" style="width:14px;height:14px;color:var(--accent-cyan);flex-shrink:0"><circle cx="8" cy="8" r="4"/></svg>
-                    ${t.name}
-                  </h4>
-                </div>
-                <div class="golu-tool-role">${t.role}</div>
-                <p>${t.desc}</p>
-              </div>
-            `).join('')}
-          </div>
-
-          <div class="golu-tools-group" style="margin-top:1.6rem">
-            <div class="golu-tools-group-title">
-              <span class="golu-status-dot cyan"></span>
-              <span>Creative Production Sequence (From Concept to Screen)</span>
+        <!-- ================================================================== -->
+        <!-- SECTION 3: AI Video Production (Brand Videos & Commercial Pipeline)-->
+        <!-- ================================================================== -->
+        ${isVideoActive ? `
+          <div class="golu-collection-section">
+            <div class="golu-collection-header">
+              <div class="golu-collection-badge cyan">${videoSection.badge || 'SECTION 3 • AI VIDEO PRODUCTION'}</div>
+              <h3 class="golu-collection-title">${videoSection.title || 'AI Video Production'}</h3>
+              <div class="golu-collection-subtitle">${videoSection.subtitle || 'Brand Videos, Production Pipelines & Commercial Delivery Architecture'}</div>
+              <p class="golu-collection-desc">
+                ${videoSection.desc || 'End-to-end commercial video production pipelines integrating human storycraft, prompt architecture, generative video tools, camera choreography, and multi-format campaign delivery (9:16 vertical & 16:9 cinematic).'}
+              </p>
             </div>
-            <div class="modal-workflow-steps">
-              ${(toolsAndWorkflow.productionSequence || []).map(s => `
-                <div class="modal-workflow-step">
-                  <div class="modal-workflow-num">${s.step}</div>
-                  <div class="modal-workflow-title">${s.phase}</div>
-                  <div class="modal-workflow-desc">${s.detail}</div>
+
+            <!-- Campaign Cards -->
+            <div class="studio-campaigns-grid">
+              ${(videoSection.campaigns || []).map(c => `
+                <div class="studio-campaign-card">
+                  <div class="studio-campaign-header">
+                    <span class="modal-badge ${c.id === 'maxora-campaign' ? 'verified' : 'demo'}">${c.badge}</span>
+                    <span class="golu-meta-pill" style="margin:0">${c.id === 'maxora-campaign' ? '9:16 Vertical Video' : '16:9 Cinematic Video'}</span>
+                  </div>
+                  <h4 class="studio-campaign-title">${c.title}</h4>
+                  <div class="studio-campaign-row">
+                    <span class="studio-campaign-label">Format &amp; Placement</span>
+                    <span class="studio-campaign-val">${c.format}</span>
+                  </div>
+                  <div class="studio-campaign-row">
+                    <span class="studio-campaign-label">Campaign Objective</span>
+                    <span class="studio-campaign-val">${c.objective}</span>
+                  </div>
+                  <div class="studio-campaign-row">
+                    <span class="studio-campaign-label">Production Pipeline</span>
+                    <span class="studio-campaign-val">${c.pipeline}</span>
+                  </div>
+                  <div class="studio-campaign-row">
+                    <span class="studio-campaign-label">Campaign Deliverables</span>
+                    <span class="studio-campaign-val">${c.deliverables}</span>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+
+            <!-- Production Sequence -->
+            <div class="golu-tools-group" style="margin-top:1.4rem">
+              <div class="golu-tools-group-title">
+                <span class="golu-status-dot cyan"></span>
+                <span>Commercial Production Sequence (From Concept to Screen)</span>
+              </div>
+              <div class="modal-workflow-steps">
+                ${(toolsAndWorkflow.productionSequence || []).map(s => `
+                  <div class="modal-workflow-step">
+                    <div class="modal-workflow-num">${s.step}</div>
+                    <div class="modal-workflow-title">${s.phase}</div>
+                    <div class="modal-workflow-desc">${s.detail}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Toolstack Grid -->
+            <div style="margin-top:1.6rem">
+              <div class="golu-tools-group-title" style="margin-bottom:0.8rem">
+                <span class="golu-status-dot cyan"></span>
+                <span>Confirmed AI Video &amp; Creative Production Toolstack</span>
+              </div>
+              <div class="golu-tools-grid">
+                ${(toolsAndWorkflow.tools || []).map(t => `
+                  <div class="modal-platform-card golu-tool-card">
+                    <div class="golu-tool-header">
+                      <h4>
+                        <svg viewBox="0 0 16 16" fill="currentColor" style="width:14px;height:14px;color:var(--accent-cyan);flex-shrink:0"><circle cx="8" cy="8" r="4"/></svg>
+                        ${t.name}
+                      </h4>
+                    </div>
+                    <div class="golu-tool-role">${t.role}</div>
+                    <p>${t.desc}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        ` : ''}
+
+        <!-- ================================================================== -->
+        <!-- SECTION 4: Creative Experiments (AI Visual Concepts & Studies)    -->
+        <!-- ================================================================== -->
+        ${isExpActive ? `
+          <div class="golu-collection-section">
+            <div class="golu-collection-header">
+              <div class="golu-collection-badge amber">${expSection.badge || 'SECTION 4 • CREATIVE EXPERIMENTS'}</div>
+              <h3 class="golu-collection-title">${expSection.title || 'Creative Experiments'}</h3>
+              <div class="golu-collection-subtitle">${expSection.subtitle || 'AI Visual Concepts, Lighting Studies & Character Prototyping'}</div>
+              <p class="golu-collection-desc">
+                ${expSection.desc || 'Systematic prompt exploration and visual concept development prototyping enamel subsurface scattering, cinematic chiaroscuro, brand packaging integration, and character consistency.'}
+              </p>
+            </div>
+
+            <div class="studio-experiments-grid">
+              ${(expSection.experiments || []).map(e => `
+                <div class="studio-experiment-card">
+                  <div class="studio-experiment-media">
+                    <img src="${e.image}" alt="${e.title}" loading="lazy" class="${e.image.includes('logo') ? 'contain-logo' : ''}">
+                  </div>
+                  <div class="studio-experiment-body">
+                    <div class="studio-experiment-meta">
+                      <span>${e.category.toUpperCase()}</span>
+                      <span>•</span>
+                      <span>${e.tools}</span>
+                    </div>
+                    <h4 class="studio-experiment-title">${e.title}</h4>
+                    <p class="studio-experiment-desc"><strong>Prompt &amp; Concept Insight:</strong> ${e.insight}</p>
+                  </div>
                 </div>
               `).join('')}
             </div>
           </div>
-        </div>
+        ` : ''}
+
       </div>
     `;
   }
@@ -4371,20 +4703,30 @@
       if (!data || !modal || !bodyEl) return;
 
       if (categoryEl) {
-        if (view === 'complan-case-study') {
-          categoryEl.textContent = 'PROJECT 02 — AI BRAND CONCEPTS';
+        if (view === 'complan-case-study' || view === 'brand-case-study') {
+          categoryEl.textContent = 'PROJECT 02 — BRAND AD CREATIVES';
         } else if (view === 'story-detail') {
-          categoryEl.textContent = 'PROJECT 02 — ORIGINAL AI STORIES';
+          categoryEl.textContent = 'PROJECT 02 — AI CHARACTER STORYTELLING';
+        } else if (view === 'video-production') {
+          categoryEl.textContent = 'PROJECT 02 — AI VIDEO PRODUCTION';
+        } else if (view === 'creative-experiments') {
+          categoryEl.textContent = 'PROJECT 02 — CREATIVE EXPERIMENTS';
         } else {
           categoryEl.textContent = data.category;
         }
       }
       if (titleEl) {
-        if (view === 'complan-case-study') {
-          titleEl.textContent = 'Complan — AI Brand Concept';
+        if (view === 'complan-case-study' || view === 'brand-case-study') {
+          const brandProjects = data.collections?.brandConcepts?.projects || [];
+          const p = brandProjects.find(item => item.id === projectId) || brandProjects[0];
+          titleEl.textContent = p ? p.title : 'Brand Ad Creatives';
         } else if (view === 'story-detail') {
           const s = (data.collections?.originalStories?.stories || []).find(item => item.id === projectId);
-          titleEl.textContent = s ? s.title : 'Original AI Stories';
+          titleEl.textContent = s ? s.title : 'AI Character Storytelling — Golu Universe';
+        } else if (view === 'video-production') {
+          titleEl.textContent = 'AI Video Production — Commercial Pipelines';
+        } else if (view === 'creative-experiments') {
+          titleEl.textContent = 'Creative Experiments — Visual Concepts';
         } else {
           titleEl.textContent = data.title;
         }
@@ -4411,6 +4753,7 @@
         dialog.scrollTop = 0;
       }
     };
+    window.showCreativeStudioView = window.showGoluView;
 
     window.showMusicView = function(view, trackId = null) {
       currentMusicView = view || 'all';
